@@ -8,7 +8,7 @@ export default class Footer extends Component {
         return (
             <div className={styles.Footer}>
                 <div className={styles.flexLeft} />
-                <div className={styles.flexMiddle}></div>
+                <div className={`${styles.flexMiddle}`}></div>
                 <div className={styles.flexLeft} />
             </div>
         );
