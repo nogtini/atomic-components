@@ -2,5 +2,21 @@
   display: flex;
   height: 500px;
   background: #ECF0F1;
-  border-bottom: 5px solid #33495F;
+  border-bottom: 4px solid #33495F;
+
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .logo {
+      padding-top: 35px;
+      height: 250px;
+    }
+
+    .skyline {
+      width: 768px;
+      margin-bottom: -4px;
+    }
+  }
 }

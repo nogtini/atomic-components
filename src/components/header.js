@@ -13,7 +13,7 @@ export default class Header extends Component {
         return (
             <div className={styles.Header}>
                 <div className={styles.flexLeft} />
-                <div className={`${styles.flexMiddle}`}>
+                <div className={`${styles.flexMiddle} ${styles.mainContent}`}>
                     <img className={styles.logo} src={logo} />
                     <img className={styles.skyline} src={skyline} />
                 </div>

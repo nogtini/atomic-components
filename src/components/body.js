@@ -8,7 +8,11 @@ export default class Body extends Component {
         return (
             <div className={styles.Body}>
                 <div className={styles.flexLeft} />
-                <div className={`${styles.flexMiddle}`}></div>
+                <div className={`${styles.flexMiddle} ${styles.main}`}>
+                    <h1>Services</h1>
+                    <div classNames={`${styles.backfrontdesign}`}></div>
+                    <div classNames={`${styles.trails}`}></div>
+                </div>
                 <div className={styles.flexLeft} />
             </div>
         );
