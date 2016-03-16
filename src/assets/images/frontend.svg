@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 198.239 133.558" enable-background="new 0 0 198.239 133.558" xml:space="preserve">
+<g>
+	<polyline fill="none" stroke="#35495E" stroke-width="3" stroke-linejoin="bevel" stroke-miterlimit="10" points="85.035,76.486 
+		72.776,67.979 85.035,59.472 	"/>
+	<polyline fill="none" stroke="#35495E" stroke-width="3" stroke-linejoin="bevel" stroke-miterlimit="10" points="113.273,76.448 
+		125.53,67.941 113.273,59.434 	"/>
+	
+		<line fill="none" stroke="#35495E" stroke-width="3" stroke-linejoin="bevel" stroke-miterlimit="10" x1="89.73" y1="81.32" x2="108.603" y2="54.576"/>
+	<rect x="146.787" y="73.983" fill="#F8C957" width="35.332" height="44.425"/>
+	
+		<rect x="146.787" y="61.832" fill="none" stroke="#35495E" stroke-width="3" stroke-miterlimit="10" width="35.332" height="12.151"/>
+	
+		<rect x="146.787" y="118.407" fill="none" stroke="#35495E" stroke-width="3" stroke-miterlimit="10" width="35.332" height="12.151"/>
+	<circle fill="#35495E" cx="164.453" cy="123.748" r="2.136"/>
+	
+		<rect x="146.787" y="61.832" fill="none" stroke="#35495E" stroke-width="6" stroke-miterlimit="10" width="35.332" height="68.726"/>
+	<polygon fill="none" stroke="#35495E" stroke-width="3" stroke-miterlimit="10" points="146.787,61.832 173.006,61.832 
+		173.006,20.882 25.232,20.882 25.232,118.408 146.787,118.408 	"/>
+	<g>
+		<path fill="none" stroke="#35495E" stroke-width="6" stroke-miterlimit="10" d="M182.119,118.408v12.15h7.045
+			c3.355,0,6.075-2.72,6.075-6.076v-6.074H182.119z"/>
+		<path fill="none" stroke="#35495E" stroke-width="6" stroke-miterlimit="10" d="M146.787,118.408H99.119H3v6.074
+			c0,3.356,2.72,6.076,6.075,6.076h90.044h47.668V118.408z"/>
+	</g>
+	<polygon fill="none" stroke="#35495E" stroke-width="6" stroke-miterlimit="10" points="16.119,9.269 16.119,118.407 
+		146.787,118.407 146.787,61.832 182.119,61.832 182.119,9.269 	"/>
+</g>
+</svg>

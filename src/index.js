@@ -1,5 +1,5 @@
 import React from 'react';
 import { render } from 'react-dom';
-import ExampleEnvironment from './components/environments/ExampleEnvironment';
+import Header from './components/Header';
 
-render(<ExampleEnvironment />, document.getElementById('root'));
+render(<Header />, document.getElementById('root'));
