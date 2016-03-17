@@ -25,7 +25,7 @@ export default class Body extends Component {
                         <div className={`${styles.frontend}`}>
                             <img className={styles.serviceImage} src={frontend} />
                             <h2>Front-End</h2>
-                            <div className={styles.serviceBody}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut mi ut augue tincidunt facilisis a vel felis. Duis aliquet diam vel quam fermentum cursus.</div><p></p>
+                            <div className={styles.serviceBody}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut mi ut augue tincidunt facilisis a vel felis. Duis aliquet diam vel quam fermentum cursus.</div>
                         </div>
                         <div className={`${styles.design}`}>
                             <img className={styles.serviceImage} src={design} />

@@ -18,36 +18,38 @@
     .backfrontdesign {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
 
       h2 {
         font-family: "open sans";
         font-weight: 100;
       }
 
-
-
       .backend {
         display: flex;
+        justify-content: center;
         flex-direction: column;
-        align-content: center;
         text-align: center;
-
+        height: 300px;
       }
 
       .frontend {
         display: flex;
+        justify-content: center;
         flex-direction: column;
-        align-content: center;
         text-align: center;
+        height: 300px;
+
+        border-left: 1px solid #33495F;
+        border-right: 1px solid #33495F;
 
       }
 
       .design {
         display: flex;
+        justify-content: center;
         flex-direction: column;
-        align-content: center;
         text-align: center;
+        height: 300px;
 
       }
     }
