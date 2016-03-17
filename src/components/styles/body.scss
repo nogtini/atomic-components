@@ -1,13 +1,15 @@
 .Body {
   display: flex;
-  height: 500px;
+  height: 750px;
   border-bottom: 1px solid #87898a;
 
   .main {
     display: flex;
     flex-direction: column;
+    max-width: 750px;
 
     > h1 {
+      margin: 80px 0;
       text-align: center;
     }
 
@@ -19,7 +21,8 @@
       .backend {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-content: center;
+        text-align: center;
 
         .backendimage {
           height: 100px;
@@ -29,7 +32,8 @@
       .frontend {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-content: center;
+        text-align: center;
 
         .frontendimage {
           height: 100px;
@@ -39,7 +43,8 @@
       .design {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-content: center;
+        text-align: center;
 
         .designimage {
           height: 100px;
