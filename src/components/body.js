@@ -18,17 +18,17 @@ export default class Body extends Component {
                     <h1>Services</h1>
                     <div className={`${styles.backfrontdesign}`}>
                         <div className={`${styles.backend}`}>
-                            <img className={styles.backendimage} src={backend} />
+                            <img className={styles.serviceImage} src={backend} />
                             <h2>Node JS</h2>
                             <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut mi ut augue tincidunt facilisis a vel felis. Duis aliquet diam vel quam fermentum cursus.</div>
                         </div>
                         <div className={`${styles.frontend}`}>
-                            <img className={styles.frontendimage} src={frontend} />
+                            <img className={styles.serviceImage} src={frontend} />
                             <h2>Front-End</h2>
                             <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut mi ut augue tincidunt facilisis a vel felis. Duis aliquet diam vel quam fermentum cursus.</div><p></p>
                         </div>
                         <div className={`${styles.design}`}>
-                            <img className={styles.designimage} src={design} />
+                            <img className={styles.serviceImage} src={design} />
                             <h2>Design</h2>
                             <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut mi ut augue tincidunt facilisis a vel felis. Duis aliquet diam vel quam fermentum cursus.</div>
                         </div>
