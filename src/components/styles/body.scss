@@ -6,5 +6,40 @@
   .main {
     display: flex;
     flex-direction: column;
+
+    .backfrontdesign {
+      display: flex;
+      flex-direction: row;
+
+      .backend {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .backendimage {
+          height: 100px;
+        }
+      }
+
+      .frontend {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .frontendimage {
+          height: 100px;
+        }
+      }
+
+      .design {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .designimage {
+          height: 100px;
+        }
+      }
+    }
   }
 }
