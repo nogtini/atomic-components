@@ -6,6 +6,7 @@ import localStyles from './styles/Body.scss';
 import backend from '../assets/images/backend.svg';
 import frontend from '../assets/images/frontend.svg';
 import design from '../assets/images/design.svg';
+import trailslogo from '../assets/images/trails.svg';
 
 const styles = Object.assign({}, localStyles, globalStyles);
 
@@ -33,7 +34,13 @@ export default class Body extends Component {
                             <div className={styles.serviceBody}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut mi ut augue tincidunt facilisis a vel felis.</div>
                         </div>
                     </div>
-                    <div className={`${styles.trails}`}></div>
+                    <div className={`${styles.trails}`}>
+                        <img src={trailslogo} className={`${styles.trailslogo}`}/>
+                        <div className={`${styles.trailstext}`}>
+                            <div className={`${styles.checkitout}`}>Check Out</div>
+                            <div className={`${styles.body}`}>Our Modern Web Application Framework for Node.JS</div>
+                        </div>
+                    </div>
                 </div>
                 <div className={styles.flexLeft} />
             </div>

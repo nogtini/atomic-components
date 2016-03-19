@@ -1,6 +1,6 @@
 .Body {
   display: flex;
-  height: 750px;
+  height: 725px;
   border-bottom: 1px solid #87898a;
 
   .main {
@@ -29,7 +29,7 @@
         justify-content: center;
         flex-direction: column;
         text-align: center;
-        height: 275px;
+        height: 250px;
       }
 
       .frontend {
@@ -37,10 +37,10 @@
         justify-content: center;
         flex-direction: column;
         text-align: center;
-        height: 275px;
+        height: 250px;
 
-        border-left: 1px solid #33495F;
-        border-right: 1px solid #33495F;
+        border-left: 1px solid #979fb2;
+        border-right: 1px solid #979fb2;
 
       }
 
@@ -49,8 +49,40 @@
         justify-content: center;
         flex-direction: column;
         text-align: center;
-        height: 275px;
+        height: 250px;
 
+      }
+    }
+
+    .trails {
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .trailslogo {
+        height: 50px;
+        margin-right: 25px;
+      }
+
+      .trailstext {
+        display: flex;
+        flex-direction: column;
+        font-family: "open sans";
+
+        .checkitout {
+          color: #33495F;
+          font-size: 10pt;
+          width: 70px;
+          border: 2px solid #33495F;
+          padding: 7px 10px;
+          margin-bottom: 5px;
+        }
+
+        .body {
+          color: #D3D8DC;
+          font-weight: 100;
+        }
       }
     }
   }
