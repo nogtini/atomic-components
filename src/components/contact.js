@@ -13,7 +13,7 @@ export default class Contact extends Component {
             <div className={styles.Contact}>
                 <div className={styles.flexLeft} />
                 <div className={`${styles.flexMiddle}`}>
-
+                    <img src={team} className={`${styles.teamimage}`}/>
                 </div>
                 <div className={styles.flexLeft} />
             </div>
