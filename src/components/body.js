@@ -37,7 +37,7 @@ export default class Body extends Component {
                     <div className={`${styles.trails}`}>
                         <img src={trailslogo} className={`${styles.trailslogo}`}/>
                         <div className={`${styles.trailstext}`}>
-                            <div className={`${styles.checkitout}`}>Check Out</div>
+                            <a href="https://github.com/trailsjs" className={`${styles.checkitout}`}>Check Out</a>
                             <div className={`${styles.body}`}>Our Modern Web Application Framework for Node.JS</div>
                         </div>
                     </div>
