@@ -18,12 +18,16 @@
       flex-direction: column;
 
       input {
-        height: 25px;
+        height: 35px;
         border-top: 4px solid #33495F;
         border-left: 4px solid #33495F;
         border-right: 4px solid #33495F;
         border-bottom: none;
         background: none;
+
+        &.projectInfo {
+          height: 75px;
+        }
       }
     }
 
