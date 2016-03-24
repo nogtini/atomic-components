@@ -15,11 +15,12 @@ export default class Contact extends Component {
                 <div className={styles.flexLeft} />
                 <div className={`${styles.flexMiddle}`}>
                     <div className={`${styles.contactTower}`}>
-                        <div className={`${styles.form}`}>
+                        <form className={`${styles.form}`}>
                             <input></input>
                             <input></input>
-                            <input className={`${styles.projectInfo}`}></input>
-                        </div>
+                            <textarea type="text" className={`${styles.projectInfo}`}></textarea>
+                            <input type="submit" value="Submit" className={`${styles.submit}`}></input>
+                        </form>
                         <img src={tower} className={`${styles.tower}`}/>
                     </div>
                     <img src={team} className={`${styles.teamimage}`}/>

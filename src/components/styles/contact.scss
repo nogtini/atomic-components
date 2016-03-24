@@ -17,16 +17,23 @@
       display: flex;
       flex-direction: column;
 
-      input {
+      input, textarea {
         height: 35px;
         border-top: 4px solid #33495F;
         border-left: 4px solid #33495F;
         border-right: 4px solid #33495F;
         border-bottom: none;
         background: none;
+        resize: none;
 
         &.projectInfo {
-          height: 75px;
+          height: 95px;
+        }
+
+        &.submit {
+          color: white;
+          background: #33495F;
+          border: 4px solid #33495F;
         }
       }
     }
