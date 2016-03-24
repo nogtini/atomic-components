@@ -5,4 +5,19 @@
   .teamimage {
     width: 100%;
   }
+
+  .contactTower {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tower {
+      height: 300px;
+    }
+  }
 }
