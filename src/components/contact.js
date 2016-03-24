@@ -18,6 +18,7 @@ export default class Contact extends Component {
                         <div className={`${styles.form}`}>
                             <input></input>
                             <input></input>
+                            <input></input>
                         </div>
                         <img src={tower} className={`${styles.tower}`}/>
                     </div>

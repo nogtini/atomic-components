@@ -7,17 +7,28 @@
   }
 
   .contactTower {
+    margin: 0 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
     .form {
+      width: 425px;
       display: flex;
       flex-direction: column;
+
+      input {
+        height: 25px;
+        border-top: 4px solid #33495F;
+        border-left: 4px solid #33495F;
+        border-right: 4px solid #33495F;
+        border-bottom: none;
+        background: none;
+      }
     }
 
     .tower {
-      height: 300px;
+      height: 200px;
     }
   }
 }
