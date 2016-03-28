@@ -1,5 +1,17 @@
 .Footer {
   display: flex;
-  height: 75px;
+  height: 100px;
   background: #F9CA4B;
+
+  .icons {
+    height: 100%;
+    margin: 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logooutline {
+      height: 40px;
+    }
+  }
 }
