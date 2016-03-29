@@ -10,6 +10,21 @@
     align-items: center;
     justify-content: space-between;
 
+    .social {
+      text-decoration: none;
+      font-size: 16pt;
+      background: none;
+      border: 1px solid #33495F;
+      border-radius: 60px;
+      color: #33495F;
+      display: inline-block;
+      height: 40px;
+      line-height: 30px;
+      margin: auto 3px;
+      width: 40px;
+      text-align: center;
+    }
+
     .logooutline {
       height: 40px;
     }

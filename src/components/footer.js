@@ -13,11 +13,11 @@ export default class Footer extends Component {
                 <div className={styles.flexLeft} />
                 <div className={`${styles.flexMiddle} main`}>
                     <div className={`${styles.icons}`}>
-                        <a className="fa fa-facebook social" href="#"></a>
-                        <a className="fa fa-twitter social" href="#"></a>
+                        <a className={`${styles.social} fa fa-facebook`} href="#"></a>
+                        <a className={`${styles.social} fa fa-twitter`} href="#"></a>
                         <img src={logooutline} className={`${styles.logooutline}`}/>
-                        <a className="fa fa-dribbble" href="#"></a>
-                        <a className="fa fa-linkedin" href="#"></a>
+                        <a className={`${styles.social} fa fa-dribbble`} href="#"></a>
+                        <a className={`${styles.social} fa fa-linkedin`} href="#"></a>
                     </div>
                 </div>
                 <div className={styles.flexLeft} />
