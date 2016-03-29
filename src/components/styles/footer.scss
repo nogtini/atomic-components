@@ -11,13 +11,17 @@
     justify-content: space-between;
 
     .social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
       text-decoration: none;
       font-size: 16pt;
       background: none;
       border: 1px solid #33495F;
       border-radius: 60px;
       color: #33495F;
-      display: inline-block;
+
       height: 40px;
       line-height: 30px;
       margin: auto 3px;
