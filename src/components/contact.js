@@ -11,14 +11,18 @@ const styles = Object.assign({}, localStyles, globalStyles);
 export default class Contact extends Component {
     render() {
         return (
-            <div className={styles.Contact}>
+          <div className={styles.Contact}>
+            <div className={styles.header}>
+              <h1>Contact</h1>
+            </div>
+            <div className={styles.main}>
                 <div className={styles.flexLeft} />
                 <div className={`${styles.flexMiddle}`}>
                     <div className={`${styles.contactTower}`}>
                         <form className={`${styles.form}`}>
                             <input placeholder='Your Email Address'></input>
                             <input placeholder='Message Subject'></input>
-                            <textarea type="text" className={`${styles.projectInfo}`}></textarea>
+                            <textarea placeholder='How can we help?' type="text" className={`${styles.projectInfo}`}></textarea>
                             <input type="submit" value="Send" className={`${styles.submit}`}></input>
                         </form>
                         <img src={tower} className={`${styles.tower}`}/>
@@ -27,6 +31,7 @@ export default class Contact extends Component {
                 </div>
                 <div className={styles.flexLeft} />
             </div>
+          </div>
         );
     }
 }
