@@ -1,5 +1,36 @@
 .Footer {
   display: flex;
-  height: 75px;
+  height: 100px;
   background: #F9CA4B;
+
+  .icons {
+    height: 100%;
+    margin: 0 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-decoration: none;
+      font-size: 16pt;
+      background: none;
+      border: 1px solid #33495F;
+      border-radius: 60px;
+      color: #33495F;
+
+      height: 40px;
+      line-height: 30px;
+      margin: auto 3px;
+      width: 40px;
+      text-align: center;
+    }
+
+    .logooutline {
+      height: 40px;
+    }
+  }
 }
