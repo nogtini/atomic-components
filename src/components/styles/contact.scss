@@ -7,18 +7,19 @@
   }
 
   .contactTower {
-    margin: 50px 25px;
+    margin: 50px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
     .form {
-      width: 425px;
+      width: 450px;
       display: flex;
       flex-direction: column;
 
       input, textarea {
         font-family: "Open Sans";
+        font-weight: 100;
         font-size: 11pt;
         padding: 5px;
         height: 35px;
@@ -29,8 +30,12 @@
         background: none;
         resize: none;
 
+        &:focus {
+          outline: none;
+        }
+
         &.projectInfo {
-          height: 95px;
+          height: 115px;
         }
 
         &.submit {
@@ -39,12 +44,13 @@
           font-size: 11pt;
           background: #33495F;
           border: 4px solid #33495F;
+          cursor: pointer;
         }
       }
     }
 
     .tower {
-      height: 200px;
+      height: 220px;
     }
   }
 }

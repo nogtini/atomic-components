@@ -16,10 +16,10 @@ export default class Contact extends Component {
                 <div className={`${styles.flexMiddle}`}>
                     <div className={`${styles.contactTower}`}>
                         <form className={`${styles.form}`}>
-                            <input></input>
-                            <input></input>
+                            <input placeholder='Your Email Address'></input>
+                            <input placeholder='Message Subject'></input>
                             <textarea type="text" className={`${styles.projectInfo}`}></textarea>
-                            <input type="submit" value="Submit" className={`${styles.submit}`}></input>
+                            <input type="submit" value="Send" className={`${styles.submit}`}></input>
                         </form>
                         <img src={tower} className={`${styles.tower}`}/>
                     </div>

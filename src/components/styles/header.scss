@@ -1,6 +1,6 @@
 .Header {
   display: flex;
-  height: 550px;
+  height: 480px;
   background: #ECF0F1;
   border-bottom: 4px solid #33495F;
 
@@ -10,12 +10,12 @@
     justify-content: space-between;
 
     .logo {
-      padding-top: 75px;
+      padding-top: 40px;
       height: 250px;
     }
 
     .skyline {
-      width: 768px;
+      width: 750px;
       margin-bottom: -4px;
     }
   }
