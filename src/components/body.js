@@ -7,6 +7,7 @@ import backend from '../assets/images/backend.svg';
 import frontend from '../assets/images/frontend.svg';
 import design from '../assets/images/design.svg';
 import trailslogo from '../assets/images/trails.svg';
+import strings from '../assets/strings';
 
 const styles = Object.assign({}, localStyles, globalStyles);
 
@@ -21,17 +22,17 @@ export default class Body extends Component {
                         <div className={`${styles.backend}`}>
                             <img className={styles.serviceImage} src={backend} />
                             <h2>Node JS</h2>
-                            <div className={styles.serviceBody}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut mi ut augue tincidunt facilisis a vel felis.</div>
+                            <div className={styles.serviceBody}>{strings.serviceBody.nodejs}</div>
                         </div>
                         <div className={`${styles.frontend}`}>
                             <img className={styles.serviceImage} src={frontend} />
                             <h2>Front-End</h2>
-                            <div className={styles.serviceBody}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut mi ut augue tincidunt facilisis a vel felis.</div>
+                            <div className={styles.serviceBody}>{strings.serviceBody.frontend}</div>
                         </div>
                         <div className={`${styles.design}`}>
                             <img className={styles.serviceImage} src={design} />
                             <h2>Design</h2>
-                            <div className={styles.serviceBody}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut mi ut augue tincidunt facilisis a vel felis.</div>
+                            <div className={styles.serviceBody}>{strings.serviceBody.design}</div>
                         </div>
                     </div>
                     <div className={`${styles.trails}`}>
