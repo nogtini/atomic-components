@@ -45,7 +45,7 @@
           resize: none;
 
           &::-webkit-input-placeholder {
-            color: #666;
+            color: #777;
           }
 
           &:focus {
@@ -59,9 +59,8 @@
           &.submit {
             color: white;
             font-weight: 500;
-            font-size: 11pt;
+            font-size: 12pt;
             background: #33495F;
-            border: 4px solid #33495F;
             cursor: pointer;
           }
         }
