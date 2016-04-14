@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import globalStyles from '../assets/styles/globals.scss';
-import localStyles from './styles/Contact.scss';
+import localStyles from './styles/contact.scss';
 import Popover from 'react-popover'
-import classNames from 'classnames'
 
 //assets
 import skyline from '../assets/images/skyline.svg';

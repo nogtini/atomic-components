@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import globalStyles from '../assets/styles/globals.scss';
-import localStyles from './styles/Footer.scss';
+import localStyles from './styles/footer.scss';
 
 //assets
 import logooutline from '../assets/images/logooutline.svg';

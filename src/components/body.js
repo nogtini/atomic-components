@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import globalStyles from '../assets/styles/globals.scss';
-import localStyles from './styles/Body.scss';
+import localStyles from './styles/body.scss';
 
 //assets
 import backend from '../assets/images/backend.svg';

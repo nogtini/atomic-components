@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import globalStyles from '../assets/styles/globals.scss';
-import localStyles from './styles/Header.scss';
+import localStyles from './styles/header.scss';
 
 //assets
 import skyline from '../assets/images/skyline.svg';
