@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
 
@@ -9,10 +10,14 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: '/static/'
+    filename: 'app.js',
+    publicPath: '/'
   },
   plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Langa',
+      template: './index.html'
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],

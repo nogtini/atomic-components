@@ -1,7 +1,7 @@
 {
-  "name": "atomic-components",
+  "name": "langa.io",
   "version": "0.0.1",
-  "description": "Applying patternlab.io design systems to React components.",
+  "description": "Langa Website",
   "scripts": {
     "clean": "rimraf dist",
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
@@ -14,21 +14,13 @@
     "url": "https://github.com/yejodido/atomic-components.git"
   },
   "keywords": [
-    "react",
-    "reactjs",
-    "boilerplate",
-    "hot",
-    "reload",
-    "hmr",
-    "live",
-    "edit",
-    "webpack",
-    "babel",
-    "react-transform"
+    "langa",
+    "trails",
+    "trailsjs"
   ],
   "author": "Joey Di Nardo",
   "license": "MIT",
-  "homepage": "https://github.com/yejodido/atomic-components",
+  "homepage": "https://github.com/langateam/langa.io",
   "devDependencies": {
     "babel-core": "^5.4.7",
     "babel-eslint": "^5.0.0-beta2",
@@ -40,6 +32,7 @@
     "eslint-plugin-react": "^2.3.0",
     "express": "^4.13.3",
     "file-loader": "^0.8.4",
+    "html-webpack-plugin": "^2.15.0",
     "node-sass": "^3.4.2",
     "react-transform-catch-errors": "^1.0.0",
     "react-transform-hmr": "^1.0.0",
