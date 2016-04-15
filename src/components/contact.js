@@ -86,7 +86,21 @@ export default class Contact extends Component {
       if (req.readyState === 4 && req.status === 200) {
         const result = JSON.parse(req.responseText)
         if (result.status == 'sent') {
-          this.setState({ status: req.status, sent: true, spinnerClass: 'fa-check', sendText: 'Sent!' })
+          this.setState({
+            status: req.status,
+            sent: true,
+            spinnerClass: 'fa-check',
+            sendText: 'Sent!'
+          })
+        }
+        else {
+          this.setState({
+            status: req.status,
+            sent: true,
+            spinnerClass: 'fa-warning',
+            error: 'Sorry, we weren\'t able to read your message. Please email hello@langa.io',
+            open: true
+          })
         }
       }
       else if (req.readyState === 4 && (req.status === 0 || req.status === 403)) {
