@@ -65,8 +65,12 @@ export default class Contact extends Component {
     this.setState({ message: e.target.value })
   }
   submitForm (e) {
-    if (this.state.sent) {
+    if (this.state.sent && this.state.status === 200) {
       this.setState({ error: 'We received your message, and will get in touch shortly! Thanks.', open: true })
+      return
+    }
+    if (this.state.sent) {
+      this.setState({ error: 'We weren\'t able to read your last message. Please email hello@langa.io', open: true })
       return
     }
 
@@ -76,19 +80,35 @@ export default class Contact extends Component {
     this.setState({ spinnerClass: 'fa-spin fa-refresh' })
 
     const req = new XMLHttpRequest()
-    req.open('POST', '//api.langa.io/email', true)
+    req.open('POST', 'https://api.langa.io/email', true)
     req.setRequestHeader('Content-Type', 'application/json')
     req.onreadystatechange = () => {
       if (req.readyState === 4 && req.status === 200) {
         const result = JSON.parse(req.responseText)
         if (result.status == 'sent') {
-          this.setState({ sent: true, spinnerClass: 'fa-check', sendText: 'Sent!' })
+          this.setState({ status: req.status, sent: true, spinnerClass: 'fa-check', sendText: 'Sent!' })
         }
       }
-      else {
-        console.log(req.responseText)
-        this.setState({ error: 'Oops! Our emailer is having some problems right now. Please email hello@langa.io' })
-        this.setState({ sent: true, spinnerClass: 'fa-warn' })
+      else if (req.readyState === 4 && (req.status === 0 || req.status === 403)) {
+        console.log('options fail')
+        this.setState({
+          error: 'Sorry, we weren\'t able to read your message. Please email hello@langa.io',
+          open: true,
+          status: req.status,
+          sent: true,
+          spinnerClass: 'fa-warning'
+        })
+      }
+      else if (req.status > 399) {
+        console.log('fail fail')
+        console.log('mailer failed', req.status)
+        this.setState({
+          error: 'Oops! Our emailer is having some problems right now. Please email hello@langa.io',
+          open: true,
+          status: req.status,
+          sent: true,
+          spinnerClass: 'fa-warning'
+        })
       }
     }
     req.send(JSON.stringify({
