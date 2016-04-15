@@ -24,8 +24,24 @@ module.exports = {
       }
     }),
     new webpack.optimize.UglifyJsPlugin({
+      'screw-ie8': true,
+      comments: false,
       compressor: {
-        warnings: false
+        negate_iife: true,
+        warnings: false,
+        drop_console: true,
+        unused: true,
+        dead_code: true,
+        unsafe: true,
+        keep_fargs: false,
+        pure_getters: true,
+        join_vars: true,
+        sequences: true,
+        loops: true,
+        booleans: true,
+        evaluate: true,
+        conditionals: true
+
       }
     })
   ],
