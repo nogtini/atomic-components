@@ -74,8 +74,8 @@ export default class Contact extends Component {
       return
     }
 
-    if (!this.validateMessage()) return
     if (!this.validateEmail()) return
+    if (!this.validateMessage()) return
 
     this.setState({ spinnerClass: 'fa-spin fa-refresh' })
 
