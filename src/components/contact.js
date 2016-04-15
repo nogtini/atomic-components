@@ -76,8 +76,7 @@ export default class Contact extends Component {
     this.setState({ spinnerClass: 'fa-spin fa-refresh' })
 
     const req = new XMLHttpRequest()
-    //req.open('POST', '//api.langa.io/email', true)
-    req.open('POST', '//localhost:4000/email', true)
+    req.open('POST', '//api.langa.io/email', true)
     req.setRequestHeader('Content-Type', 'application/json')
     req.onreadystatechange = () => {
       if (req.readyState === 4 && req.status === 200) {
