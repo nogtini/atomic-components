@@ -1,6 +1,6 @@
 {
   "name": "langa.io",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Langa Website",
   "scripts": {
     "clean": "rimraf dist",
