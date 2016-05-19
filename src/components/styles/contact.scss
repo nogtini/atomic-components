@@ -23,37 +23,33 @@
 }
 
 .Contact {
+  display: flex;
+  justify-content: center;
   background: #ECF0F1;
-
-  .header {
-
-    > h1 {
-      font-family: "open sans";
-      font-weight: 100;
-      font-size: 32pt;
-      margin: 0px 0 50px 0;
-      padding-top: 40px;
-      text-align: center;
-    }
-  }
 
   .main {
     display: flex;
-
-    .teamimage {
-      width: 100%;
-    }
+    justify-content: center;
 
     .contactTower {
-      margin: 0 0 50px 0px;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      flex-direction: column-reverse;
+      margin-bottom: 2.25em;
+
+      @media (min-width: 768px) {
+        margin: 0 0 3.125em 0;
+        flex-direction: row;
+        justify-content: space-between;
+      }
 
       .form {
-        width: 450px;
         display: flex;
         flex-direction: column;
+        margin: 0 1rem;
+        @media (min-width: 768px) {
+          width: 450px;
+          margin: 0;
+        }
 
         i {
           margin-right: 0.5em;
@@ -100,7 +96,17 @@
 
       .tower {
         height: 220px;
+        margin-bottom: 1rem;
+        @media (min-width: 768px) {
+          margin: 0;
+        }
       }
+
     }
+
+    .teamimage {
+      width: 100%;
+    }
+
   }
 }
