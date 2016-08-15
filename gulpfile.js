@@ -1,0 +1,82 @@
+const gulp = require('gulp');
+const babel = require('gulp-babel');
+const webpack = require('webpack-stream');
+const imagemin = require('gulp-imagemin');
+const watch = require('gulp-watch');
+const batch = require('gulp-batch');
+
+const babelConfig = {
+  presets: ['react', 'es2015'],
+  plugins: [
+    [
+      'css-modules-transform', {
+        preprocessCss: './preprocessScss.js',
+        generateScopedName: '[name]__[local]___[hash:base64:5]',
+        extensions: ['.css', '.scss'],
+        extractCss: './dist/assets/styles/prod.css'
+      }
+    ]
+  ]
+}
+
+gulp.task('default', () => {
+  gulp.start('moveStrings', 'moveStyles', 'compileTemplate', 'compileStyles', 'image', 'bundle');
+});
+
+gulp.task('compileTemplate', () => {
+  return gulp.src('./src/components/**/*.js')
+    .pipe(babel(babelConfig))
+    .pipe(gulp.dest('dist/components'));
+});
+
+gulp.task('moveStrings', () => {
+  return gulp.src('./src/assets/strings.js')
+    .pipe(gulp.dest('dist/assets/'));
+});
+
+gulp.task('moveStyles', () => {
+  return gulp.src('./src/components/styles/**/*.scss')
+    .pipe(gulp.dest('dist/components/styles'));
+});
+
+gulp.task('compileStyles', () => {
+  return gulp.src('./src/assets/styles/globals.scss')
+    .pipe(gulp.dest('dist/assets/styles'));
+});
+
+gulp.task('image', () => {
+  return gulp.src('./src/assets/images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('dist/assets/images'));
+});
+
+gulp.task('bundle', () => {
+  return gulp.src('./src/index.js')
+    .pipe(webpack({
+      output: {
+        filename: 'client.js',
+      },
+      module: {
+        loaders: [
+          {
+            test: /\.js$/,
+            loader: 'babel',
+            query: {
+              presets: ['react', 'es2015'],
+            },
+          },
+          {
+            test: /\.scss$/,
+            loaders: ['style', 'css', 'sass'],
+          }
+        ],
+      },
+    }))
+    .pipe(gulp.dest('dist/assets'));
+});
+
+gulp.task('watch', () => {
+  watch('./src/**/*.*', batch((events, done) => {
+    gulp.start('default', done);
+  }));
+});

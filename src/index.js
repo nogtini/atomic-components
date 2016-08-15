@@ -1,5 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
-import App from './components/App';
+import AppComponent from './components/App';
 
-render(<App />, document.getElementById('root'))
+const app = React.createFactory(AppComponent);
+const mountNode = document.getElementById('app-mount');
+const serverState = window.state;
+
+render(app(serverState), mountNode);
