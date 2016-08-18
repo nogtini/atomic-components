@@ -10,6 +10,7 @@ const Component = React.createClass({
         <head>
           <meta name="description" content="Web application design, development, enterprise architecture, hiring, and training for Node.js and React.js" />
           <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
 
           <link rel="author" href="https://plus.google.com/108812193853051708628" />
           <link ref="publisher" href="https://plus.google.com/108812193853051708628" />
