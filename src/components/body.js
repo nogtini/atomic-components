@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
+
 import globalStyles from '../assets/styles/globals.scss';
 import localStyles from './styles/body.scss';
 
-//assets
-import backend from '../assets/images/backend.svg';
-import frontend from '../assets/images/frontend.svg';
-import design from '../assets/images/design.svg';
-import trailslogo from '../assets/images/trails.svg';
+const backend = '../assets/images/backend.svg';
+const frontend = '../assets/images/frontend.svg';
+const design = '../assets/images/design.svg';
+const trailslogo = '../assets/images/trails.svg';
 import strings from '../assets/strings';
 
-const styles = Object.assign({}, localStyles, globalStyles);
+const styles = Object.assign({}, globalStyles, localStyles);
 
 export default class Body extends Component {
   render() {

@@ -3,12 +3,11 @@ import globalStyles from '../assets/styles/globals.scss';
 import localStyles from './styles/contact.scss';
 import Popover from 'react-popover'
 
-//assets
-import skyline from '../assets/images/skyline.svg';
-import tower from '../assets/images/tower.svg';
-import team from '../assets/images/teamblue.png';
+const tower = '../assets/images/tower.svg';
+const team = '../assets/images/teamblue.png';
 
-const styles = Object.assign({}, localStyles, globalStyles);
+const styles = Object.assign({}, globalStyles, localStyles);
+
 export default class Contact extends Component {
 
   constructor (props) {
@@ -88,7 +87,7 @@ export default class Contact extends Component {
     req.onreadystatechange = () => {
       if (req.readyState === 4 && req.status === 200) {
         const result = JSON.parse(req.responseText)
-        if (result.status == 'sent') {
+        if (result.status === 'sent' || result.status === 'queued') {
           this.setState({ status: req.status, sent: true, spinnerClass: 'fa-check', sendText: 'Sent!' })
         }
       }

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
+
 import globalStyles from '../assets/styles/globals.scss';
 import localStyles from './styles/footer.scss';
 
-// assets
-import logooutline from '../assets/images/logooutline.svg';
+const logooutline = '../assets/images/logooutline.svg';
+const styles = Object.assign({}, globalStyles, localStyles);
 
-const styles = Object.assign({}, localStyles, globalStyles);
 export default class Footer extends Component {
   render() {
     return (
