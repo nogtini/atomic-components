@@ -5,43 +5,19 @@ const imagemin = require('gulp-imagemin');
 const watch = require('gulp-watch');
 const batch = require('gulp-batch');
 
-const babelConfig = {
-  presets: ['react', 'es2015'],
-  plugins: [
-    [
-      'css-modules-transform', {
-        preprocessCss: './preprocessScss.js',
-        generateScopedName: '[name]__[local]___[hash:base64:5]',
-        extensions: ['.css', '.scss'],
-        extractCss: './dist/assets/styles/prod.css'
-      }
-    ]
-  ]
-}
-
 gulp.task('default', () => {
-  gulp.start('moveStrings', 'moveStyles', 'compileTemplate', 'compileStyles', 'image', 'bundle');
+  gulp.start('moveStrings', 'compileTemplate', 'image', 'bundle');
 });
 
 gulp.task('compileTemplate', () => {
   return gulp.src('./src/components/**/*.js')
-    .pipe(babel(babelConfig))
+    .pipe(babel())
     .pipe(gulp.dest('dist/components'));
 });
 
 gulp.task('moveStrings', () => {
   return gulp.src('./src/assets/strings.js')
     .pipe(gulp.dest('dist/assets/'));
-});
-
-gulp.task('moveStyles', () => {
-  return gulp.src('./src/components/styles/**/*.scss')
-    .pipe(gulp.dest('dist/components/styles'));
-});
-
-gulp.task('compileStyles', () => {
-  return gulp.src('./src/assets/styles/globals.scss')
-    .pipe(gulp.dest('dist/assets/styles'));
 });
 
 gulp.task('image', () => {
@@ -68,7 +44,7 @@ gulp.task('bundle', () => {
           {
             test: /\.scss$/,
             loaders: ['style', 'css', 'sass'],
-          }
+          },
         ],
       },
     }))
