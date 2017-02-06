@@ -4,7 +4,6 @@ import localStyles from './styles/contact.scss'
 import Popover from 'react-popover'
 
 //assets
-import skyline from '../assets/images/skyline.svg'
 import tower from '../assets/images/tower.svg'
 import team from '../assets/images/teamblue.png'
 
