@@ -134,51 +134,51 @@ export default class Contact extends Component {
   render () {
     const { sendText, spinnerClass, error, open } = this.state
     return (
-        <div className={styles.Contact}>
-          <div className={styles.header}>
-            <h1>Contact</h1>
-          </div>
-          <div className={styles.main}>
-              <div className={styles.flexLeft} />
-              <div className={`${styles.flexMiddle}`}>
-                  <div className={`${styles.contactTower}`}>
-                      <form className={`${styles.form}`}>
-                          <input placeholder="What's your Email Address?" onChange={e => this.onEmailChanged(e)}></input>
-                          <input placeholder="Message Subject" onChange={e => this.onSubjectChanged(e)}></input>
-                          <textarea
-                            placeholder="How can we help?"
-                            type="text"
-                            onChange={e => this.onMessageChanged(e)}
-                            className={`${styles.projectInfo}`}>
-                          </textarea>
-                          <button type="button" className={`${styles.submit}`} onClick={e => this.submitForm(e)}>
-                            <i className={'fa ' + spinnerClass} />
-                            {sendText}
-                          </button>
-                          <Popover
-                            offset={8}
-                            enterExitTransitionDurationMs={200}
-                            refreshIntervalMs={10000}
-                            className={styles.Popoverbody}
-                            isOpen={open}
-                            body={
-                              <div>
-                                {error}
-                              </div>
-                            }
-                            onOuterAction={() => this.closePopover()}
-                            place="below">
-                              <div className="target" onClick={() => this.closePopover()}>
-                              </div>
-                          </Popover>
-                      </form>
-                      <img src={tower} className={`${styles.tower}`}/>
-                  </div>
-                  <img src={team} className={`${styles.teamimage}`}/>
-              </div>
-              <div className={styles.flexLeft} />
-          </div>
+      <div className={styles.Contact}>
+        <div className={styles.header}>
+          <h1>Contact</h1>
         </div>
+        <div className={styles.main}>
+          <div className={styles.flexLeft} />
+          <div className={`${styles.flexMiddle}`}>
+            <div className={`${styles.contactTower}`}>
+              <form className={`${styles.form}`}>
+                <input placeholder="What's your Email Address?" onChange={e => this.onEmailChanged(e)}></input>
+                <input placeholder="Message Subject" onChange={e => this.onSubjectChanged(e)}></input>
+                <textarea
+                  placeholder="How can we help?"
+                  type="text"
+                  onChange={e => this.onMessageChanged(e)}
+                  className={`${styles.projectInfo}`}>
+                </textarea>
+                <button type="button" className={`${styles.submit}`} onClick={e => this.submitForm(e)}>
+                  <i className={'fa ' + spinnerClass} />
+                  {sendText}
+                </button>
+                <Popover
+                  offset={8}
+                  enterExitTransitionDurationMs={200}
+                  refreshIntervalMs={10000}
+                  className={styles.Popoverbody}
+                  isOpen={open}
+                  body={
+                    <div>
+                      {error}
+                    </div>
+                  }
+                  onOuterAction={() => this.closePopover()}
+                  place="below">
+                    <div className="target" onClick={() => this.closePopover()}>
+                    </div>
+                </Popover>
+              </form>
+              <img src={tower} className={`${styles.tower}`}/>
+            </div>
+            <img src={team} className={`${styles.teamimage}`}/>
+          </div>
+          <div className={styles.flexLeft} />
+        </div>
+      </div>
     )
   }
 }
