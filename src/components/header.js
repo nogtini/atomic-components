@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import globalStyles from '../assets/styles/globals.scss';
-import localStyles from './styles/header.scss';
+import React, { Component } from 'react'
+import globalStyles from '../assets/styles/globals.scss'
+import localStyles from './styles/header.scss'
 
 //assets
-import skyline from '../assets/images/skyline.svg';
-import logo from '../assets/images/logomain.svg';
+import skyline from '../assets/images/skyline.svg'
+import logo from '../assets/images/logomain.svg'
 
-const styles = Object.assign({}, localStyles, globalStyles);
+const styles = Object.assign({}, localStyles, globalStyles)
 
 export default class Header extends Component {
-    render() {
-        return (
+  render() {
+    return (
             <div className={styles.Header}>
                 <div className={styles.flexLeft} />
                 <div className={`${styles.flexMiddle} ${styles.mainContent}`}>
@@ -19,6 +19,6 @@ export default class Header extends Component {
                 </div>
                 <div className={styles.flexLeft} />
             </div>
-        );
-    }
+    )
+  }
 }

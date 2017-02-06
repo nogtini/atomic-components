@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import globalStyles from '../assets/styles/globals.scss';
-import localStyles from './styles/contact.scss';
+import React, { Component } from 'react'
+import globalStyles from '../assets/styles/globals.scss'
+import localStyles from './styles/contact.scss'
 import Popover from 'react-popover'
 
 //assets
-import skyline from '../assets/images/skyline.svg';
-import tower from '../assets/images/tower.svg';
-import team from '../assets/images/teamblue.png';
+import skyline from '../assets/images/skyline.svg'
+import tower from '../assets/images/tower.svg'
+import team from '../assets/images/teamblue.png'
 
-const styles = Object.assign({}, localStyles, globalStyles);
+const styles = Object.assign({}, localStyles, globalStyles)
 export default class Contact extends Component {
 
   constructor (props) {
@@ -134,7 +134,7 @@ export default class Contact extends Component {
 
   render () {
     const { sendText, spinnerClass, error, open } = this.state
-      return (
+    return (
         <div className={styles.Contact}>
           <div className={styles.header}>
             <h1>Contact</h1>
@@ -145,9 +145,9 @@ export default class Contact extends Component {
                   <div className={`${styles.contactTower}`}>
                       <form className={`${styles.form}`}>
                           <input placeholder="What's your Email Address?" onChange={e => this.onEmailChanged(e)}></input>
-                          <input placeholder='Message Subject' onChange={e => this.onSubjectChanged(e)}></input>
+                          <input placeholder="Message Subject" onChange={e => this.onSubjectChanged(e)}></input>
                           <textarea
-                            placeholder='How can we help?'
+                            placeholder="How can we help?"
                             type="text"
                             onChange={e => this.onMessageChanged(e)}
                             className={`${styles.projectInfo}`}>
@@ -168,7 +168,7 @@ export default class Contact extends Component {
                               </div>
                             }
                             onOuterAction={() => this.closePopover()}
-                            place='below'>
+                            place="below">
                               <div className="target" onClick={() => this.closePopover()}>
                               </div>
                           </Popover>
@@ -180,6 +180,6 @@ export default class Contact extends Component {
               <div className={styles.flexLeft} />
           </div>
         </div>
-      );
+    )
   }
 }

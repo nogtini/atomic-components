@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
-import globalStyles from '../assets/styles/globals.scss';
-import localStyles from './styles/body.scss';
+import React, { Component } from 'react'
+import globalStyles from '../assets/styles/globals.scss'
+import localStyles from './styles/body.scss'
 
 //assets
-import backend from '../assets/images/backend.svg';
-import frontend from '../assets/images/frontend.svg';
-import design from '../assets/images/design.svg';
-import trailslogo from '../assets/images/trails.svg';
-import strings from '../assets/strings';
+import backend from '../assets/images/backend.svg'
+import frontend from '../assets/images/frontend.svg'
+import design from '../assets/images/design.svg'
+import trailslogo from '../assets/images/trails.svg'
+import strings from '../assets/strings'
 
-const styles = Object.assign({}, localStyles, globalStyles);
+const styles = Object.assign({}, localStyles, globalStyles)
 
 export default class Body extends Component {
-    render() {
-        return (
+  render() {
+    return (
             <div className={styles.Body}>
                 <div className={styles.flexLeft} />
                 <div className={`${styles.flexMiddle} ${styles.main}`}>
@@ -45,6 +45,6 @@ export default class Body extends Component {
                 </div>
                 <div className={styles.flexLeft} />
             </div>
-        );
-    }
+    )
+  }
 }
