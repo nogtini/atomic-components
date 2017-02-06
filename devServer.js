@@ -13,8 +13,14 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 
-app.get('*', function(req, res) {
+/*
+app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'index.html'));
+});
+*/
+
+app.get('/favicon.png', function(req, res) {
+  res.sendFile(path.join(__dirname, 'src/assets/images/favicon.png'));
 });
 
 app.listen(3000, 'localhost', function(err) {

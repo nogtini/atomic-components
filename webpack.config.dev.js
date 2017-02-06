@@ -1,11 +1,12 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require('path');
-const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const path = require('path')
+//const webpack = require('webpack')
 
 module.exports = {
   devtool: 'eval',
   entry: [
-    'webpack-hot-middleware/client',
+    //'webpack-hot-middleware/client',
     './src/index'
   ],
   output: {
@@ -18,7 +19,11 @@ module.exports = {
       title: 'Langa | Enterprise Web Development and Design',
       template: './index.html'
     }),
-    new webpack.HotModuleReplacementPlugin()
+    /*
+    new CopyWebpackPlugin([
+      { from: 'src/assets/favicon.ico', to: '/' }
+    ])
+    */
   ],
   module: {
     loaders: [{
@@ -39,9 +44,14 @@ module.exports = {
       loader: 'file-loader?name=fonts/[name].[ext]',
       exclude: path.join(__dirname, 'node_modules')
     }, {
+    }, {
+      test: /favicon\.ico$/,
+      loader: 'file-loader?name=favicon.ico',
+      exclude: path.join(__dirname, 'node_modules')
+    }, {
       test: /\.(png|jpg)$/,
       loader: 'url-loader?limit=25000',
       exclude: path.join(__dirname, 'node_modules')
     }]
   }
-};
+}
