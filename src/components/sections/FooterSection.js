@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
 import globalStyles from '../styles/global.scss'
 import localStyles from './styles/FooterSection.scss'
 
@@ -14,16 +15,15 @@ export default class Footer extends Component {
             <div className={styles.siteMap}>
 
               <ul>
-                <li>Home</li>
-                <li>Open Source</li>
-                <li>Contact Us</li>
-                <li>About Langa</li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/opensource">Open Source</Link></li>
+                <li><Link to="/contact">Contact Us</Link></li>
               </ul>
 
               <ul>
-                <li>Backend</li>
-                <li>Frontend</li>
-                <li>Design</li>
+                <li><Link to="/services/node-js-development">Backend</Link></li>
+                <li><Link to="/services/front-end-development">Frontend</Link></li>
+                <li><Link to="/services/design">Design</Link></li>
               </ul>
             </div>
             <div className={styles.contactInfo}>
@@ -40,6 +40,7 @@ export default class Footer extends Component {
             <a title="Langa on Github" className={`${styles.social} fa fa-github-alt`} href="//github.com/langateam" target="_blank"></a>
             <a title="Langa on Linkedin" className={`${styles.social} fa fa-linkedin`} href="//www.linkedin.com/company/langa-inc-" target="_blank"></a>
             <a title="Langa on Medium" className={`${styles.social} fa fa-medium`} href="//www.medium.com/language-arts" target="_blank"></a>
+            <a title="Langa on Google Maps" className={`${styles.social} fa fa-map-marker`} href="https://www.google.com/maps/place/Langa" target="_blank"></a>
           </div>
         </div>
 

@@ -21,7 +21,7 @@ export default class HomePage extends Component {
             Succeed with Node.js
           </h1>
           <h2>
-            Langa is a software consulting company and a cadre of passionate developers.
+            Langa is a software consulting company and a cadre of passionate full-stack developers.
             We partner with clients across the globe to deliver software solutions that
             address their toughest challenges.
           </h2>

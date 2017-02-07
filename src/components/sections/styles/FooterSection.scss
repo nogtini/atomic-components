@@ -1,16 +1,21 @@
 .Footer {
-  height: 240px;
+  height: 200px;
   background: #F9CA4B;
   justify-content: center;
 
   .summary {
     display: flex;
     flex-direction: row;
-    height: 140px;
-    padding-top: 2em;
+    padding-top: 1em;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
 
     .siteMap {
-      color: #33495F;
+      color: black;
+      //color: #33495F;
       display: flex;
       flex-direction: row;
       width: 450px;
@@ -33,7 +38,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 320px;
+    width: 480px;
+    padding-top: 1em;
 
     .social {
       display: flex;
