@@ -29,7 +29,12 @@
 
   .main {
     display: flex;
-    justify-content: center;
+
+    .teamimage {
+      width: 100%;
+      display: block;
+      justify-content: center;
+    }
 
     .contactTower {
       display: flex;

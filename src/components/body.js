@@ -6,7 +6,7 @@ import localStyles from './styles/body.scss'
 import backend from '../assets/images/backend.svg'
 import frontend from '../assets/images/frontend.svg'
 import design from '../assets/images/design.svg'
-import trailslogo from '../assets/images/trails.svg'
+//import trailslogo from '../assets/images/trails.svg'
 import strings from '../assets/strings'
 
 const styles = Object.assign({}, localStyles, globalStyles)

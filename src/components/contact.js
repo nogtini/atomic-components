@@ -87,7 +87,7 @@ export default class Contact extends Component {
     req.onreadystatechange = () => {
       if (req.readyState === 4 && req.status === 200) {
         const result = JSON.parse(req.responseText)
-        if (result.status == 'sent') {
+        if (result.status == 'sent' || result.status == 'queued') {
           this.setState({
             status: req.status,
             sent: true,
