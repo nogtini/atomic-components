@@ -8,7 +8,7 @@ import tower from '../../assets/images/tower.svg'
 import team from '../../assets/images/teamblue.png'
 
 const styles = Object.assign({}, localStyles, globalStyles)
-export default class Contact extends Component {
+export default class ContactSection extends Component {
 
   constructor (props) {
     super(props)
@@ -136,11 +136,15 @@ export default class Contact extends Component {
 
   render () {
     const { sendText, spinnerClass, error, open } = this.state
+
     return (
       <div className={styles.Contact}>
         <div className={styles.header}>
-          <h1>Contact</h1>
+          <h1>Contact Us</h1>
         </div>
+          <h2>
+            Need help with a project? Looking to augment your team? Let's Talk!
+          </h2>
         <div className={styles.main}>
           <div className={styles.flexLeft} />
           <div className={`${styles.flexMiddle}`}>

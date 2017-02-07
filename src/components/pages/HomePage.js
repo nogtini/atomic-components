@@ -14,7 +14,7 @@ const styles = Object.assign({}, localStyles, globalStyles)
 export default class HomePage extends Component {
   render() {
     return (
-      <div className={styles.Body}>
+      <div className={styles.Container}>
         <div className={styles.flexLeft} />
         <div className={`${styles.flexMiddle} ${styles.main}`}>
           <h1>

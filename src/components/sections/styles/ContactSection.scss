@@ -3,7 +3,7 @@
   flex-direction: column;
   padding: 1em 2em;
   background: #f9ca4b;
-  //color: white;
+  color: black;
   font-family: "open sans";
   font-weight: 100;
   font-size: 15px;
@@ -23,9 +23,7 @@
 }
 
 .Contact {
-  display: flex;
   justify-content: center;
-  background: #ECF0F1;
 
   .main {
     display: flex;
@@ -112,6 +110,5 @@
     .teamimage {
       width: 100%;
     }
-
   }
 }
