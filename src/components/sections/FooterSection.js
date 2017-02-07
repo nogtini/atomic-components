@@ -27,8 +27,8 @@ export default class Footer extends Component {
               </ul>
             </div>
             <div className={styles.contactInfo}>
-              <h2>hello@langa.io</h2>
-              <h2>(757) 828-7656</h2>
+              <h2><i className={'fa fa-envelope'} /><a href="mailto:hello@langa.io">hello@langa.io</a></h2>
+              <h2><i className={'fa fa-phone'} /><a href="tel:+17578287656">(757) 828-7656</a></h2>
             </div>
           </div>
         </div>

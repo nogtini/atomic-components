@@ -1,6 +1,7 @@
 //@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 
 .Footer {
+  border-top: 4px solid #33495F;
   height: 200px;
   background: #F9CA4B;
   justify-content: center;
@@ -31,6 +32,13 @@
       h1, h2 {
         margin-top: 10px;
         margin-bottom: 10px;
+        text-align: left;
+      }
+      i {
+        margin-right: 1em;
+        opacity: 0.5;
+        width: 1em;
+        text-align: center;
       }
     }
   }

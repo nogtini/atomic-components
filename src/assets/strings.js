@@ -7,7 +7,7 @@ module.exports = {
   },
   pages: {
     home: {
-      title: 'Suceed with Node.js',
+      title: 'Succeed with Node.js',
       blurb: 'Langa is a software consulting company and a cadre of passionate full-stack developers. We partner with clients across the globe to deliver software solutions that address their toughest challenges.',
       services: {
         nodejs: 'Our Node.js experts can help your team with development, consulting, training, and hiring.',
