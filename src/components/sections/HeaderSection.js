@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-import globalStyles from '../assets/styles/globals.scss'
-import localStyles from './styles/header.scss'
+import globalStyles from '../styles/global.scss'
+import localStyles from './styles/HeaderSection.scss'
 
 //assets
-import skyline from '../assets/images/skyline.svg'
-import logo from '../assets/images/logomain.svg'
+import skyline from '../../assets/images/skyline.svg'
+import logo from '../../assets/images/logomain.svg'
 
 const styles = Object.assign({}, localStyles, globalStyles)
 

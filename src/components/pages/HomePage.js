@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
-import globalStyles from '../assets/styles/globals.scss'
-import localStyles from './styles/body.scss'
+import globalStyles from '../styles/global.scss'
+import localStyles from './styles/HomePage.scss'
 
 //assets
-import backend from '../assets/images/backend.svg'
-import frontend from '../assets/images/frontend.svg'
-import design from '../assets/images/design.svg'
+import backend from '../../assets/images/backend.svg'
+import frontend from '../../assets/images/frontend.svg'
+import design from '../../assets/images/design.svg'
 //import trailslogo from '../assets/images/trails.svg'
-import strings from '../assets/strings'
+import strings from '../../assets/strings'
 
 const styles = Object.assign({}, localStyles, globalStyles)
 
-export default class Body extends Component {
+export default class HomePage extends Component {
   render() {
     return (
       <div className={styles.Body}>
@@ -25,7 +25,7 @@ export default class Body extends Component {
             We partner with clients across the globe to deliver software solutions that
             address their toughest challenges.
           </h2>
-          <div className={`${styles.backfrontdesign}`}>
+          <div className={`${styles.backfrontdesign} ${styles.services}`}>
             <div className={`${styles.backend}`}>
               <img className={styles.serviceImage} src={backend} />
               <h2>Back-End</h2>

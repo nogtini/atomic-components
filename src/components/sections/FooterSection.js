@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import globalStyles from '../assets/styles/globals.scss'
-import localStyles from './styles/footer.scss'
-import logooutline from '../assets/images/logooutline.svg'
+import globalStyles from '../styles/global.scss'
+import localStyles from './styles/FooterSection.scss'
 
 const styles = Object.assign({}, localStyles, globalStyles)
 

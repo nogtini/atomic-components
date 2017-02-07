@@ -1,13 +1,9 @@
 import React, { Component } from 'react'
-import Header from './header'
-/*
-import Body from './body'
-import Contact from './contact'
-*/
-import Footer from './footer'
+import { FooterSection, HeaderSection } from './sections'
 import styles from './styles/App.scss'
 
 export default class App extends Component {
+
   static get propTypes () {
     return {
       children: React.PropTypes.any
@@ -17,14 +13,9 @@ export default class App extends Component {
   render() {
     return (
       <div className={styles.App}>
-        <Header />
-
+        <HeaderSection />
         {this.props.children}
-
-        {/*<Body />
-        <Contact />
-        */}
-        <Footer />
+        <FooterSection />
       </div>
     )
   }

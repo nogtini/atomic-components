@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import globalStyles from '../assets/styles/globals.scss'
-import localStyles from './styles/contact.scss'
+import globalStyles from '../styles/global.scss'
+import localStyles from './styles/ContactSection.scss'
 import Popover from 'react-popover'
 
 //assets
-import tower from '../assets/images/tower.svg'
-import team from '../assets/images/teamblue.png'
+import tower from '../../assets/images/tower.svg'
+import team from '../../assets/images/teamblue.png'
 
 const styles = Object.assign({}, localStyles, globalStyles)
 export default class Contact extends Component {
