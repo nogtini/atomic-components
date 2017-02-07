@@ -23,11 +23,15 @@
 }
 
 .Contact {
-  justify-content: center;
+  background: #ECF0F1;
+  border-top: 4px solid #33495F;
+  margin-top: 40px;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 
   .main {
-    display: flex;
-
     .teamimage {
       width: 100%;
       display: block;

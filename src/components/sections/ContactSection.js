@@ -7,6 +7,8 @@ import Popover from 'react-popover'
 import tower from '../../assets/images/tower.svg'
 import team from '../../assets/images/teamblue.png'
 
+import { sections } from '../../assets/strings'
+
 const styles = Object.assign({}, localStyles, globalStyles)
 export default class ContactSection extends Component {
 
@@ -135,55 +137,50 @@ export default class ContactSection extends Component {
   }
 
   render () {
+    const strings = sections.contact
     const { sendText, spinnerClass, error, open } = this.state
 
     return (
       <div className={styles.Contact}>
-        <div className={styles.header}>
-          <h1>Contact Us</h1>
-        </div>
+        <div className={`${styles.main} ${styles.flexMiddle}`}>
+          <h1>{strings.title}</h1>
           <h2>
-            Need help with a project? Looking to augment your team? Let's Talk!
+            {strings.blurb}
           </h2>
-        <div className={styles.main}>
-          <div className={styles.flexLeft} />
-          <div className={`${styles.flexMiddle}`}>
-            <div className={`${styles.contactTower}`}>
-              <form className={`${styles.form}`}>
-                <input placeholder="What's your Email Address?" onChange={e => this.onEmailChanged(e)}></input>
-                <input placeholder="Message Subject" onChange={e => this.onSubjectChanged(e)}></input>
-                <textarea
-                  placeholder="How can we help?"
-                  type="text"
-                  onChange={e => this.onMessageChanged(e)}
-                  className={`${styles.projectInfo}`}>
-                </textarea>
-                <button type="button" className={`${styles.submit}`} onClick={e => this.submitForm(e)}>
-                  <i className={'fa ' + spinnerClass} />
-                  {sendText}
-                </button>
-                <Popover
-                  offset={8}
-                  enterExitTransitionDurationMs={200}
-                  refreshIntervalMs={10000}
-                  className={styles.Popoverbody}
-                  isOpen={open}
-                  body={
-                    <div>
-                      {error}
-                    </div>
-                  }
-                  onOuterAction={() => this.closePopover()}
-                  place="below">
-                    <div className="target" onClick={() => this.closePopover()}>
-                    </div>
-                </Popover>
-              </form>
-              <img src={tower} className={`${styles.tower}`}/>
-            </div>
-            <img src={team} className={`${styles.teamimage}`}/>
+          <div className={`${styles.contactTower}`}>
+            <form className={`${styles.form}`}>
+              <input placeholder="What's your Email Address?" onChange={e => this.onEmailChanged(e)}></input>
+              <input placeholder="Message Subject" onChange={e => this.onSubjectChanged(e)}></input>
+              <textarea
+                placeholder="How can we help?"
+                type="text"
+                onChange={e => this.onMessageChanged(e)}
+                className={`${styles.projectInfo}`}>
+              </textarea>
+              <button type="button" className={`${styles.submit}`} onClick={e => this.submitForm(e)}>
+                <i className={'fa ' + spinnerClass} />
+                {sendText}
+              </button>
+              <Popover
+                offset={8}
+                enterExitTransitionDurationMs={200}
+                refreshIntervalMs={10000}
+                className={styles.Popoverbody}
+                isOpen={open}
+                body={
+                  <div>
+                    {error}
+                  </div>
+                }
+                onOuterAction={() => this.closePopover()}
+                place="below">
+                  <div className="target" onClick={() => this.closePopover()}>
+                  </div>
+              </Popover>
+            </form>
+            <img src={tower} className={`${styles.tower}`}/>
           </div>
-          <div className={styles.flexLeft} />
+          <img src={team} className={`${styles.teamimage}`}/>
         </div>
       </div>
     )

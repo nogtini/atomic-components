@@ -2,7 +2,7 @@ import './console'
 
 import React from 'react'
 import { render } from 'react-dom'
-import { Router, Route, IndexRoute, browserHistory } from 'react-router'
+import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 import App from './components/App'
 import {
   HomePage,
@@ -14,7 +14,7 @@ import {
 } from './components/pages'
 
 render((
-  <Router history={browserHistory}>
+  <Router history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={HomePage} />
       <Route path="services/front-end-development" component={FrontendServicePage} />

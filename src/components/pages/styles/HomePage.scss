@@ -19,7 +19,6 @@
 
     @media screen and (min-width: 768px) {
       flex-direction: row;
-      margin-bottom: 5em;
     }
 
     .design,
@@ -36,8 +35,8 @@
         margin: 10px 0 10px 0;
       }
 
-
       @media screen and (min-width: 768px) {
+        width: 190px;
         height: 250px;
         margin-bottom: 0;
       }
