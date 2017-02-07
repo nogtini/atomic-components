@@ -1,4 +1,3 @@
-console.clear()
 console.log(
 `             _.,oo * oo,._
           .-o.              .o-.         
