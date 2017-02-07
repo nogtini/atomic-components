@@ -57,12 +57,15 @@ export default class Contact extends Component {
   onSubjectChanged (e) {
     this.setState({ subject: e.target.value })
   }
+
   onEmailChanged (e) {
     this.setState({ email: e.target.value })
   }
+
   onMessageChanged (e) {
     this.setState({ message: e.target.value })
   }
+
   submitForm (e) {
     if (this.state.sent && this.state.status === 200) {
       this.setState({ error: 'We received your message, and will get in touch shortly! Thanks.', open: true })

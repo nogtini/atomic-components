@@ -32,7 +32,7 @@
     "eslint": "^3.15.0",
     "eslint-config-trails": "^2.0.6",
     "eslint-plugin-react": "^6.9.0",
-    "express": "^4.13.3",
+    "express": "^4.14.1",
     "file-loader": "^0.10.0",
     "html-webpack-plugin": "^2.15.0",
     "node-sass": "^4.5.0",
