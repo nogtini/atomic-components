@@ -8,21 +8,21 @@
     flex-direction: column;
 
     > h1 {
-      font-family: "open sans";
-      font-weight: 100;
-      font-size: 32pt;
-      margin: 40px 0 50px 0;
+      font-size: 36px;
+      margin: 50px 0 20px 0;
+      text-align: center;
+    }
+
+    > h2 {
+      font-size: 22px;
+      margin: 30px 0 20px 0;
       text-align: center;
     }
 
     .backfrontdesign {
       display: flex;
       flex-direction: row;
-
-      h2 {
-        font-family: "open sans";
-        font-weight: 100;
-      }
+      margin-top: 40px;
 
       .backend {
         display: flex;
@@ -68,7 +68,6 @@
       .trailstext {
         display: flex;
         flex-direction: column;
-        font-family: "open sans";
 
         .checkitout {
           color: #33495F;

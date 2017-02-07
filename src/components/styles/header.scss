@@ -1,22 +1,42 @@
-.Header {
-  display: flex;
-  height: 480px;
+.header {
   background: #ECF0F1;
-  border-bottom: 4px solid #33495F;
 
-  .mainContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  .navbar {
+    text-align: right;
 
-    .logo {
-      padding-top: 40px;
-      height: 250px;
+    .navlink {
+      color: #33495F;
+      font-size: 23px;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-weight: 900;
+      margin-right: 1em;
+      line-height: 3em;
+      text-decoration: none;
+
+      &:hover, &:active {
+        text-decoration: underline;
+      }
     }
+  }
+  .banner {
+    display: flex;
+    height: 320px;
+    border-bottom: 4px solid #33495F;
 
-    .skyline {
-      width: 750px;
-      margin-bottom: -4px;
+    .mainContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .logo {
+        padding-top: 2em;
+        height: 80px;
+      }
+
+      .skyline {
+        width: 750px;
+        margin-bottom: -4px;
+      }
     }
   }
 }

@@ -17,11 +17,18 @@ export default class Body extends Component {
       <div className={styles.Body}>
         <div className={styles.flexLeft} />
         <div className={`${styles.flexMiddle} ${styles.main}`}>
-          <h1>Services</h1>
+          <h1>
+            Succeed with Node.js
+          </h1>
+          <h2>
+            Langa is a software consulting company and a cadre of passionate developers.
+            We partner with clients across the globe to deliver software solutions that
+            address their toughest challenges.
+          </h2>
           <div className={`${styles.backfrontdesign}`}>
             <div className={`${styles.backend}`}>
               <img className={styles.serviceImage} src={backend} />
-              <h2>Node JS</h2>
+              <h2>Back-End</h2>
               <div className={styles.serviceBody}>{strings.serviceBody.nodejs}</div>
             </div>
             <div className={`${styles.frontend}`}>
@@ -35,6 +42,7 @@ export default class Body extends Component {
               <div className={styles.serviceBody}>{strings.serviceBody.design}</div>
             </div>
           </div>
+          {/*
           <div className={`${styles.trails}`}>
             <img src={trailslogo} className={`${styles.trailslogo}`}/>
             <div className={`${styles.trailstext}`}>
@@ -42,6 +50,7 @@ export default class Body extends Component {
               <div className={`${styles.body}`}>A Modern Web Application Framework for Node.js</div>
             </div>
           </div>
+          */}
         </div>
         <div className={styles.flexLeft} />
       </div>

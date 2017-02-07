@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
 import globalStyles from '../assets/styles/globals.scss'
 import localStyles from './styles/header.scss'
 
@@ -11,13 +12,26 @@ const styles = Object.assign({}, localStyles, globalStyles)
 export default class Header extends Component {
   render() {
     return (
-      <div className={styles.Header}>
-        <div className={styles.flexLeft} />
-        <div className={`${styles.flexMiddle} ${styles.mainContent}`}>
-          <img className={styles.logo} src={logo} />
-          <img className={styles.skyline} src={skyline} />
+      <div className={styles.header}>
+
+        <div className={styles.navbar}>
+          <Link className={styles.navlink} to="/">Home</Link>
+          <Link className={styles.navlink} to="/services/front-end-development">Frontend</Link>
+          <Link className={styles.navlink} to="/services/node-js-development">Node.js</Link>
+          <Link className={styles.navlink} to="/services/design">Design</Link>
+          <Link className={styles.navlink} to="/opensource">Open Source</Link>
+          <Link className={styles.navlink} to="/contact">Contact Us</Link>
         </div>
-        <div className={styles.flexLeft} />
+
+        <div className={styles.banner}>
+          <div className={styles.flexLeft} />
+          <div className={`${styles.flexMiddle} ${styles.mainContent}`}>
+            <img className={styles.logo} src={logo} />
+            <img className={styles.skyline} src={skyline} />
+          </div>
+          <div className={styles.flexRight} />
+        </div>
+
       </div>
     )
   }

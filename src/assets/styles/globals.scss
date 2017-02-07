@@ -1,6 +1,11 @@
 //fonts
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 
+body * {
+  font-family: "open sans";
+  font-weight: 100;
+}
+
 .flexLeft {
   flex: 1;
 }
