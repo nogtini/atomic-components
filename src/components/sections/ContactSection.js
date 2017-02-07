@@ -12,6 +12,12 @@ import { sections } from '../../assets/strings'
 const styles = Object.assign({}, localStyles, globalStyles)
 export default class ContactSection extends Component {
 
+  static get propTypes () {
+    return {
+      page: React.PropTypes.bool
+    }
+  }
+
   constructor (props) {
     super(props)
     this.state = {
@@ -139,9 +145,10 @@ export default class ContactSection extends Component {
   render () {
     const strings = sections.contact
     const { sendText, spinnerClass, error, open } = this.state
+    const sectionStyle = this.props.page ? '' : styles.section
 
     return (
-      <div className={styles.Contact}>
+      <div className={`${styles.Contact} ${sectionStyle}`}>
         <div className={`${styles.main} ${styles.flexMiddle}`}>
           <h1>{strings.title}</h1>
           <h2>
