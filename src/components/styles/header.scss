@@ -30,17 +30,19 @@
     }
 
     .logo {
-      height: 96px;
-      margin-bottom: 1em;
+      width: 100%;
       @media (min-width: 768px) {
-        height: 250px;
-        margin-bottom: 1.65em;
+        height: 96px;
+        margin-bottom: 1em;
+        margin-top: 1em;
       }
     }
 
     .skyline {
       width: 100%;
-      margin-bottom: -4px;
+      @media (min-width: 768px) {
+        margin-bottom: -4px;
+      }
     }
   }
 }
