@@ -32,6 +32,11 @@
       margin-bottom: 2em;
       padding: 0 2em;
 
+      h1, h2 {
+        margin: 10px 0 10px 0;
+      }
+
+
       @media screen and (min-width: 768px) {
         height: 250px;
         margin-bottom: 0;

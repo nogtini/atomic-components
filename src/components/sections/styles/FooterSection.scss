@@ -1,3 +1,5 @@
+//@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
 .Footer {
   height: 200px;
   background: #F9CA4B;
@@ -58,8 +60,38 @@
       margin: auto 3px;
       width: 40px;
       text-align: center;
-    }
 
+      &.twitter {
+        &:hover {
+          color: #1dcaff;
+        }
+      }
+      &.facebook {
+        &:hover {
+          color: #3b5998;
+        }
+      }
+      &.github {
+        &:hover {
+          color: black;
+        }
+      }
+      &.linkedin {
+        &:hover {
+          color: #0077B5;
+        }
+      }
+      &.medium {
+        &:hover {
+          color: #0be370;
+        }
+      }
+      &.maps {
+        &:hover {
+          color: #e81e25;
+        }
+      }
+    }
     .logooutline {
       height: 40px;
     }

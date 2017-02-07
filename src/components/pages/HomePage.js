@@ -15,7 +15,6 @@ export default class HomePage extends Component {
   render() {
     return (
       <div className={styles.Container}>
-        <div className={styles.flexLeft} />
         <div className={`${styles.flexMiddle} ${styles.main}`}>
           <h1>
             Succeed with Node.js
