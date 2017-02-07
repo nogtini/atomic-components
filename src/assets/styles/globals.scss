@@ -11,6 +11,13 @@ body * {
 .flexLeft {
   flex: 1;
 }
+.flexRight {
+  flex: 1;
+}
+.flexMiddle {
+  min-width: 750px;
+  max-width: 750px;
+}
 
 .Container {
   width: 100%;
