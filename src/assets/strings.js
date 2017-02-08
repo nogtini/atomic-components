@@ -22,7 +22,17 @@ module.exports = {
     },
     openSource: {
       title: 'Open Source is in our DNA',
-      blurb: 'Thousands of systems around the world run on open-source software contributions made by the Langa Team. We contribute to, and trust in the open-source ecosystem. It\'s good for developers, and great for business.'
+      blurb: 'Thousands of systems around the world run on open-source software contributions made by the Langa Team. We contribute to, and trust in the global open-source ecosystem.',
+      featured: {
+        trails: 'Langa created Trails.js, a Modern Web Application Framework for Node.js, and a suite of plugins.',
+        sails: 'Since 2014, we\'ve maintained numerous plugins and adapters for Sails.js, Waterline, and Skipper.',
+        misc: 'We\'ve published hundreds of open-source Node.js modules, and are happy to work with users and contributors.'
+      },
+      events: {
+        blurb: 'We support Node and Javascript events all over the world. See you there!',
+        conf: 'Langa is a proud sponsor of Node Interactive and the Node Foundation, and continue to support industry conferences all over the world.',
+        meetup: 'We sponsor and co-organize our local Javascript users group in Norfolk, VA, and share talks at local meetups around the world.'
+      }
     },
     backend: {
       title: 'The world\'s leading Node.js Experts',
