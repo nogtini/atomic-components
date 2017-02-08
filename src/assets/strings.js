@@ -26,7 +26,7 @@ module.exports = {
     },
     backend: {
       title: 'The world\'s leading Node.js Experts',
-      blurb: '',
+      blurb: 'Looking for Node.js development services? We can help. We specialize in Node.js, working directly with clients to build scalable, high-performance, enterprise-grade software.',
       nodejs: 'Our Node.js experts can help your team with development, consulting, training, and hiring.',
       architecture: 'Migrating a legacy system or building a new one? Our experts can assist with planning and review.',
       apis: 'APIs can be beautiful. Our architects build frameworks that developers love.',
