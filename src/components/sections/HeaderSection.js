@@ -17,7 +17,7 @@ export default class Header extends Component {
         <div className={styles.navbar}>
           <Link className={styles.navlink} to="/">Home</Link>
           <Link className={styles.navlink} to="/services/front-end-development">Frontend</Link>
-          <Link className={styles.navlink} to="/services/node-js-development">Node.js</Link>
+          <Link className={styles.navlink} to="/services/node-js-development">Backend</Link>
           <Link className={styles.navlink} to="/services/design">Design</Link>
           <Link className={styles.navlink} to="/opensource">Open Source</Link>
           <Link className={styles.navlink} to="/contact">Contact Us</Link>
