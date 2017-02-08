@@ -26,23 +26,23 @@ module.exports = {
     },
     backend: {
       title: 'The world\'s leading Node.js Experts',
-      blurb: 'Looking for Node.js development services? We can help. We specialize in Node.js, working directly with clients to build scalable, high-performance, enterprise-grade software.',
+      blurb: 'We specialize in Node.js, working directly with clients to build scalable, high-performance, enterprise-grade software.',
       nodejs: 'Our Node.js experts can help your team with development, consulting, training, and hiring.',
       architecture: 'Migrating a legacy system or building a new one? Our experts can assist with planning and review.',
-      apis: 'APIs can be beautiful. Our architects build frameworks that developers love.',
+      apis: 'APIs can be beautiful. Our architects build APIs and frameworks that developers love.',
       contactTitle: 'Talk to one of our Backend experts'
     },
     frontend: {
-      title: 'We deliver amazing web experiences',
-      blurb: 'Our expertise and passion for the craft produces solutions that provide real value and serve as an engine of growth for our clients.',
-      approach: 'Our agile and collaborative approach based on industry best practices and a pedigree of process delivers amazing web experiences.',
+      title: 'Modern Web Applications',
+      blurb: 'Our expert React.js developers craft incredible web experiences using innovative methods and mdoern tools.',
+      approach: 'Agile and collaborative approach based on industry best practices and a pedigree of process delivers amazing web experiences.',
       react: 'Mastery of next-generation tools such as React.js and GraphQL results in scalable and maintainable applications.',
       design: 'Our user experience experts utilize and develop novel and modern design principles to optimize usability.',
       contactTitle: 'Talk to one of our Frontend experts'
     },
     design: {
-      title: 'Our design specialists deliver incredible user experiences',
-      blurb: 'Our expertise and passion for the craft of illustration and UX engineering produces solutions that provide real value and serve as an engine of growth for our clients.',
+      title: 'Amazing User Experiences',
+      blurb: 'Langa\'s designers excel in illustration and UX engineering for modern software applications',
       multiPlatform: 'We design multi-platform experiences for web, mobile, IoT, and more.',
       integration: 'We understand what it takes to breathe life into ideas and integrate design with software.',
       //design --> same as services.frontend.design

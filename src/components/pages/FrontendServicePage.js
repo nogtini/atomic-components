@@ -7,7 +7,7 @@ import { pages } from '../../assets/strings'
 
 const styles = Object.assign({}, localStyles, globalStyles)
 
-export default class NodeServicePage extends Component {
+export default class FrontendServicePage extends Component {
   render() {
     const strings = pages.frontend
     return (
@@ -32,7 +32,7 @@ export default class NodeServicePage extends Component {
             </div>
             <div className={`${styles.design}`}>
               <img className={styles.serviceImage} />
-              <h2>UX Design</h2>
+              <h2>Graphic and UX Design</h2>
               <div className={styles.serviceBody}>{strings.design}</div>
             </div>
           </div>

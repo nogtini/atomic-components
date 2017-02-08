@@ -27,7 +27,7 @@ export default class NodeServicePage extends Component {
             </div>
             <div className={`${styles.frontend}`}>
               <img className={styles.serviceImage} />
-              <h2>Consulting</h2>
+              <h2>Architecture</h2>
               <div className={styles.serviceBody}>{strings.architecture}</div>
             </div>
             <div className={`${styles.design}`}>
