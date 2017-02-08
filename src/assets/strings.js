@@ -33,11 +33,11 @@ module.exports = {
       contactTitle: 'Talk to one of our Backend experts'
     },
     frontend: {
-      title: 'We deliver amazing web experiences using React.js and other modern web technologies',
+      title: 'We deliver amazing web experiences',
       blurb: 'Our expertise and passion for the craft produces solutions that provide real value and serve as an engine of growth for our clients.',
-      approach: 'Our highly agile and collaborative approach delivers amazing web experiences.',
-      react: 'Our mastery of next-generation tools such as React.js and GraphQL results in scalable and maintainable applications.',
-      design: 'Langa\'s user-experience experts focus on modern design principles to optimize usability.',
+      approach: 'Our agile and collaborative approach based on industry best practices and a pedigree of process delivers amazing web experiences.',
+      react: 'Mastery of next-generation tools such as React.js and GraphQL results in scalable and maintainable applications.',
+      design: 'Our user experience experts utilize and develop novel and modern design principles to optimize usability.',
       contactTitle: 'Talk to one of our Frontend experts'
     },
     design: {

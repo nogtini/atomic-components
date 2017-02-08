@@ -3,10 +3,6 @@ import ContactSection from '../sections/ContactSection'
 import globalStyles from '../styles/global.scss'
 import localStyles from './styles/HomePage.scss'
 
-import backend from '../../assets/images/backend.svg'
-import frontend from '../../assets/images/frontend.svg'
-import design from '../../assets/images/design.svg'
-
 import { pages } from '../../assets/strings'
 
 const styles = Object.assign({}, localStyles, globalStyles)
