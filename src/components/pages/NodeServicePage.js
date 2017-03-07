@@ -21,17 +21,17 @@ export default class NodeServicePage extends Component {
           </h2>
           <div className={`${styles.backfrontdesign} ${styles.services}`}>
             <div className={`${styles.backend}`}>
-              <img className={styles.serviceImage} />
+              <img src="http://cdn.langa.io/art/diagrams/services-backend-dev.svg" className={styles.serviceImage} />
               <h2>Development</h2>
               <div className={styles.serviceBody}>{strings.nodejs}</div>
             </div>
             <div className={`${styles.frontend}`}>
-              <img className={styles.serviceImage} />
+              <img src="http://cdn.langa.io/art/diagrams/services-backend-architecture.svg" className={styles.serviceImage} />
               <h2>Architecture</h2>
               <div className={styles.serviceBody}>{strings.architecture}</div>
             </div>
             <div className={`${styles.design}`}>
-              <img className={styles.serviceImage} />
+              <img src="http://cdn.langa.io/art/diagrams/services-backend-apis.svg" className={styles.serviceImage} />
               <h2>API Design</h2>
               <div className={styles.serviceBody}>{strings.apis}</div>
             </div>

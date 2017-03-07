@@ -21,17 +21,17 @@ export default class FrontendServicePage extends Component {
           </h2>
           <div className={`${styles.backfrontdesign} ${styles.services}`}>
             <div className={`${styles.backend}`}>
-              <img className={styles.serviceImage} />
+              <img src="http://cdn.langa.io/art/diagrams/services-frontend-approach.svg" className={styles.serviceImage} />
               <h2>Unique Approach</h2>
               <div className={styles.serviceBody}>{strings.approach}</div>
             </div>
             <div className={`${styles.frontend}`}>
-              <img className={styles.serviceImage} />
+              <img src="http://cdn.langa.io/art/diagrams/services-frontend-moderntools.svg" className={styles.serviceImage} />
               <h2>Modern Tools</h2>
               <div className={styles.serviceBody}>{strings.react}</div>
             </div>
             <div className={`${styles.design}`}>
-              <img className={styles.serviceImage} />
+              <img src="http://cdn.langa.io/art/diagrams/services-frontend-ux.svg" className={styles.serviceImage} />
               <h2>Graphic and UX Design</h2>
               <div className={styles.serviceBody}>{strings.design}</div>
             </div>

@@ -21,17 +21,17 @@ export default class DesignServicePage extends Component {
           </h2>
           <div className={`${styles.backfrontdesign} ${styles.services}`}>
             <div className={`${styles.backend}`}>
-              <img className={styles.serviceImage} />
+              <img src="http://cdn.langa.io/art/diagrams/services-design-multiplatform.svg" className={styles.serviceImage} />
               <h2>Multi Platform</h2>
               <div className={styles.serviceBody}>{strings.multiPlatform}</div>
             </div>
             <div className={`${styles.frontend}`}>
-              <img className={styles.serviceImage} />
+              <img src="http://cdn.langa.io/art/diagrams/services-design-integration.svg" className={styles.serviceImage} />
               <h2>Integration</h2>
               <div className={styles.serviceBody}>{strings.integration}</div>
             </div>
             <div className={`${styles.design}`}>
-              <img className={styles.serviceImage} />
+              <img src="http://cdn.langa.io/art/diagrams/services-frontend-ux.svg" className={styles.serviceImage} />
               <h2>User Experience</h2>
               <div className={styles.serviceBody}>{pages.frontend.design}</div>
             </div>
