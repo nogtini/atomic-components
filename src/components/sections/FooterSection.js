@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router'
 import globalStyles from '../styles/global.scss'
 import localStyles from './styles/FooterSection.scss'
 
@@ -15,15 +14,15 @@ export default class Footer extends Component {
             <div className={styles.siteMap}>
 
               <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/opensource">Open Source</Link></li>
-                <li><Link to="/contact">Contact Us</Link></li>
+                <li><a to="/">Home</a></li>
+                <li><a to="/opensource">Open Source</a></li>
+                <li><a to="/contact">Contact Us</a></li>
               </ul>
 
               <ul>
-                <li><Link to="/services/node-js-development">Backend</Link></li>
-                <li><Link to="/services/front-end-development">Frontend</Link></li>
-                <li><Link to="/services/design">Design</Link></li>
+                <li><a to="/services/node-js-development">Backend</a></li>
+                <li><a to="/services/front-end-development">Frontend</a></li>
+                <li><a to="/services/design">Design</a></li>
               </ul>
             </div>
             <div className={styles.contactInfo}>

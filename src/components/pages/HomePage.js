@@ -29,17 +29,21 @@ export default class HomePage extends Component {
             <div className={`${styles.backfrontdesign} ${styles.services}`}>
               <div className={`${styles.backend}`}>
                 <img className={styles.serviceImage} src={backend} />
-                <h2>Back-End</h2>
+                <h2><a href="/services/node-js-development">Back-End</a></h2>
                 <div className={styles.serviceBody}>{strings.services.nodejs}</div>
               </div>
               <div className={`${styles.frontend}`}>
                 <img className={styles.serviceImage} src={frontend} />
-                <h2>Front-End</h2>
-                <div className={styles.serviceBody}>{strings.services.frontend}</div>
+                <a href="/services/front-end-development">
+                  <h2>Front-End</h2>
+                </a>
+                <div className={styles.serviceBody}>{strings.services.frontend}</div>k
               </div>
               <div className={`${styles.design}`}>
                 <img className={styles.serviceImage} src={design} />
-                <h2>Design</h2>
+                <a href="/services/design">
+                  <h2>Design</h2>
+                </a>
                 <div className={styles.serviceBody}>{strings.services.design}</div>
               </div>
             </div>

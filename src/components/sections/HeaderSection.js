@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router'
 import globalStyles from '../styles/global.scss'
 import localStyles from './styles/HeaderSection.scss'
 
@@ -15,12 +14,12 @@ export default class Header extends Component {
       <div className={styles.header}>
 
         <div className={styles.navbar}>
-          <Link className={styles.navlink} to="/">Home</Link>
-          <Link className={styles.navlink} to="/services/node-js-development">Backend</Link>
-          <Link className={styles.navlink} to="/services/front-end-development">Frontend</Link>
-          <Link className={styles.navlink} to="/services/design">Design</Link>
-          <Link className={styles.navlink} to="/opensource">Open Source</Link>
-          <Link className={styles.navlink} to="/contact">Contact Us</Link>
+          <a className={styles.navlink} to="/">Home</a>
+          <a className={styles.navlink} to="/services/node-js-development">Backend</a>
+          <a className={styles.navlink} to="/services/front-end-development">Frontend</a>
+          <a className={styles.navlink} to="/services/design">Design</a>
+          <a className={styles.navlink} to="/opensource">Open Source</a>
+          <a className={styles.navlink} to="/contact">Contact Us</a>
         </div>
 
         <div className={styles.banner}>
