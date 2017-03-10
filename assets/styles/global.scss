@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+body {
+  font-family: "open sans";
+  font-weight: 100;
+  line-height: 1.5;
+  color: #888;
+  font-size: 15px;
+  margin: 0;
+}
+
+body * {
+  font-family: "open sans";
+  font-weight: 100;
+  margin: 0;
+}
+
+h1 {
+  color: black;
+  font-size: 36px;
+  margin: 40px 0 20px 0;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  font-size: 22px;
+  margin: 20px 0 40px 0;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.flexLeft {
+  flex: 1;
+}
+.flexRight {
+  flex: 1;
+}
+.flexMiddle {
+  min-width: 750px;
+  max-width: 750px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
