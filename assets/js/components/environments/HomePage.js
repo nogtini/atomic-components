@@ -10,8 +10,8 @@ export default class HomePage extends Component {
     return (
       <div className="home-page">
         <HeaderSection />
-        <div className="Container">
-          <div className="flexMiddle section">
+        <div className="Container section">
+          <div className="flexMiddle">
             <h1>
               {strings.title}
             </h1>

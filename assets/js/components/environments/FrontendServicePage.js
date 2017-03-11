@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { ContactSection, FooterSection, HeaderSection } from '../ecosystems'
 
-import { pages } from '../../assets/strings'
+import { pages } from '../../strings'
 
 export default class FrontendServicePage extends Component {
   render() {

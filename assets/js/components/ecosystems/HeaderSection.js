@@ -6,12 +6,12 @@ export default class Header extends Component {
       <div className="header">
 
         <div className="navbar">
-          <a className="navlink" to="/">Home</a>
-          <a className="navlink" to="/services/node-js-development">Backend</a>
-          <a className="navlink" to="/services/front-end-development">Frontend</a>
-          <a className="navlink" to="/services/design">Design</a>
-          <a className="navlink" to="/opensource">Open Source</a>
-          <a className="navlink" to="/contact">Contact Us</a>
+          <a className="navlink" href="/">Home</a>
+          <a className="navlink" href="/services/node-js-development">Backend</a>
+          <a className="navlink" href="/services/front-end-development">Frontend</a>
+          <a className="navlink" href="/services/design">Design</a>
+          <a className="navlink" href="/opensource">Open Source</a>
+          <a className="navlink" href="/contact">Contact Us</a>
         </div>
 
         <div className="banner">

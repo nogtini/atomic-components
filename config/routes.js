@@ -38,6 +38,11 @@ module.exports = [
     path: '/{page?}',
     handler: 'ViewController.page'
   },
+  {
+    method: 'GET',
+    path: '/services/{page}',
+    handler: 'ViewController.page'
+  },
 
   {
     method: 'POST',

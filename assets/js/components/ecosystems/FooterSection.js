@@ -10,15 +10,15 @@ export default class Footer extends Component {
             <div className="siteMap">
 
               <ul>
-                <li><a to="/">Home</a></li>
-                <li><a to="/opensource">Open Source</a></li>
-                <li><a to="/contact">Contact Us</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/opensource">Open Source</a></li>
+                <li><a href="/contact">Contact Us</a></li>
               </ul>
 
               <ul>
-                <li><a to="/services/node-js-development">Backend</a></li>
-                <li><a to="/services/front-end-development">Frontend</a></li>
-                <li><a to="/services/design">Design</a></li>
+                <li><a href="/services/node-js-development">Backend</a></li>
+                <li><a href="/services/front-end-development">Frontend</a></li>
+                <li><a href="/services/design">Design</a></li>
               </ul>
             </div>
             <div className="contact-info">

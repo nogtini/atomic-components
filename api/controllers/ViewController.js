@@ -5,9 +5,9 @@ module.exports = class ViewController extends Controller {
 
   static get pageMapping () {
     return {
-      'services/node-js-development': 'NodeServicePage',
-      'services/front-end-development': 'FrontendServicePage',
-      'services/design': 'DesignServicePage',
+      'node-js-development': 'NodeServicePage',
+      'front-end-development': 'FrontendServicePage',
+      'design': 'DesignServicePage',
       'opensource': 'OpenSourcePage',
       'contact': 'ContactPage'
     }

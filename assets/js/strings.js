@@ -44,7 +44,7 @@ module.exports = {
     },
     frontend: {
       title: 'Modern Web Applications',
-      blurb: 'Our expert React.js developers craft incredible web experiences using innovative methods and mdoern tools.',
+      blurb: 'Our expert React.js developers craft incredible web experiences using innovative methods and modern tools.',
       approach: 'Agile and collaborative approach based on industry best practices and a pedigree of process delivers amazing web experiences.',
       react: 'Mastery of next-generation tools such as React.js and GraphQL results in scalable and maintainable applications.',
       design: 'Our user experience experts utilize and develop novel and modern design principles to optimize usability.',
