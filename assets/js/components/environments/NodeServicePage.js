@@ -11,7 +11,7 @@ export default class NodeServicePage extends Component {
       <div className="services-backend-page">
         <HeaderSection />
         <div className="Container">
-          <div className="flexMiddle section">
+          <div className="section">
             <h1>
               {strings.title}
             </h1>

@@ -8,10 +8,10 @@ export default class FrontendServicePage extends Component {
     const strings = pages.frontend
 
     return (
-      <div className="services-frontend">
+      <div className="services-frontend-page">
         <HeaderSection />
-        <div className="Container">
-          <div className="flexMiddle section">
+        <div className="section">
+          <div className="Container">
             <h1>
               {strings.title}
             </h1>

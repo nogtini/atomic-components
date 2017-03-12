@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ContactSection from '../ecosystems/ContactSection'
+import { ContactSection, FooterSection, HeaderSection } from '../ecosystems'
 
 import { pages } from '../../strings'
 
@@ -9,6 +9,7 @@ export default class OpenSourcePage extends Component {
 
     return (
       <div className="opensource-page">
+        <HeaderSection />
         <div className="Container">
           <a
               className="ribbon github-fork-ribbon left-top"
@@ -17,7 +18,7 @@ export default class OpenSourcePage extends Component {
               title="Fork me on GitHub">
             Fork me on GitHub
           </a>
-          <div className="flexMiddle section">
+          <div className="section">
             <h1>
               {strings.title}
             </h1>
@@ -61,7 +62,7 @@ export default class OpenSourcePage extends Component {
               {strings.events.blurb}
             </h2>
             <div className="events">
-              <div className="events">
+              <div className="eventItem">
                 <a href="http://events.linuxfoundation.org/events/node-interactive" target="_blank">
                   <img src="//cdn.langa.io/art/logos/nodelogo.png" />
                   <h2>Node Interactive 2016</h2>
@@ -70,7 +71,7 @@ export default class OpenSourcePage extends Component {
               </div>
               <div className="eventItem">
                 <a href="https://meetup.com/norfolkjs" target="_blank">
-                  <img src="cdn.langa.io/art/logos/norfolkjslogo.jpg" />
+                  <img src="//cdn.langa.io/art/logos/norfolkjslogo.jpg" />
                   <h2>Norfolk.js Meetup</h2>
                 </a>
                 <div>{strings.events.meetup}</div>
@@ -79,6 +80,7 @@ export default class OpenSourcePage extends Component {
           </div>
         </div>
         <ContactSection />
+        <FooterSection />
       </div>
     )
   }

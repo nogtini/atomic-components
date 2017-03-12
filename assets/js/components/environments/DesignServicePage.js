@@ -8,10 +8,10 @@ export default class DesignServicePage extends Component {
     const strings = pages.design
 
     return (
-      <div className="service-design-page">
+      <div className="services-design-page">
         <HeaderSection />
         <div className="Container">
-          <div className="section flexMiddle">
+          <div className="section">
             <h1>
               {strings.title}
             </h1>

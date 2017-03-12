@@ -22,7 +22,8 @@ export default class IndexPage extends Component {
           <link ref="publisher" href="https://plus.google.com/108812193853051708628" />
           <link rel="icon" href="//cdn.langa.io/art/icons/favicon.png" type="image/png" />
           <link rel="stylesheet" href="/style/global.css" />
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet" />
+          <link rel="stylesheet" href="//cdn.langa.io/art/misc/fontello/css/fontello.css" />
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
 					<script dangerouslySetInnerHTML={{__html: `
               (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

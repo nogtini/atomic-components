@@ -140,7 +140,7 @@ export default class ContactSection extends Component {
     const { sendText, spinnerClass, error, open } = this.state
 
     return (
-      <div className="Contact sectionStyle">
+      <div className="Contact">
         <div className="section flexMiddle">
           <h1>{strings.title}</h1>
           <h2>
@@ -179,7 +179,7 @@ export default class ContactSection extends Component {
             </form>
             <img src="//cdn.langa.io/art/diagrams/tower.svg" className="tower" />
           </div>
-          <img src="//cdn.langa.io/art/backgrounds/teamblue.png" className="teamimage" />
+          <img src="//cdn.langa.io/art/backgrounds/teamblue-small-png8.png" className="teamimage" />
         </div>
       </div>
     )

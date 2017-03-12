@@ -10,8 +10,8 @@ export default class HomePage extends Component {
     return (
       <div className="home-page">
         <HeaderSection />
-        <div className="Container section">
-          <div className="flexMiddle">
+        <div className="section">
+          <div className="Container">
             <h1>
               {strings.title}
             </h1>
@@ -29,7 +29,7 @@ export default class HomePage extends Component {
                 <a href="/services/front-end-development">
                   <h2>Front-End</h2>
                 </a>
-                <div>{strings.services.frontend}</div>k
+                <div>{strings.services.frontend}</div>
               </div>
               <div className="design">
                 <img src="//cdn.langa.io/art/diagrams/design.svg" />

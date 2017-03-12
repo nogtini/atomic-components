@@ -6,7 +6,7 @@ export default class ContactPage extends Component {
     return (
       <div className="contact-page">
         <HeaderSection />
-        <ContactSection page />
+        <ContactSection />
         <FooterSection />
       </div>
     )

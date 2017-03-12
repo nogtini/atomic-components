@@ -1,5 +1,3 @@
-//@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
-
 .Footer {
   border-top: 4px solid #33495F;
   height: 240px;
@@ -22,7 +20,6 @@
 
     .siteMap {
       color: black;
-      //color: #33495F;
       display: flex;
       flex-direction: row;
       width: 480px;
@@ -31,13 +28,13 @@
         margin-left: 3em;
       }
     }
-    .contactInfo {
+    .contact-info {
       width: 270px;
       h2 {
         font-size: 18px;
       }
       h1, h2 {
-        margin-top: 8px;
+        margin-top: 0;
         margin-bottom: 8px;
         text-align: left;
       }
