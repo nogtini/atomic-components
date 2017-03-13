@@ -36,21 +36,6 @@ module.exports = {
       return gulp.src('./assets/img/*')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/img'))
-    },
-    bundle () {
-      gulp.src('assets/styles/global.scss')
-        .pipe(webpack({
-          output: {
-            filename: 'app.css'
-          },
-          module: {
-            loaders: [{
-              test: /\.scss$/,
-              loaders: [ 'style-loader', 'css-loader/locals', 'sass-loader' ]
-            }]
-          }
-        }))
-        .pipe(gulp.dest('dist'))
     }
   }
 }
