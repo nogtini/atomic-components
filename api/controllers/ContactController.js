@@ -4,11 +4,20 @@ const Controller = require('trails/controller')
 
 /**
  * @module ContactController
- * @description Handles Langa Website Contact Form.
+ * @description Handle contact form requests.
  */
 module.exports = class ContactController extends Controller {
-  contact (request, reply) {
-    reply({ status: 200 })
+
+  email (request, reply) {
+    const meta = {
+      origin: request.info.hostname,
+      ip: request.headers['x-forwarded-for'] || request.info.remoteAddress,
+      referrer: request.info.referrer
+    }
+
+    this.app.services.ContactService.email(request.payload, meta)
+      .then(resp => reply(resp))
   }
+
 }
 

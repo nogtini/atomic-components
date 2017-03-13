@@ -1,3 +1,4 @@
+exports.contact = require('./contact')
 exports.database = require('./database')
 exports.env = require('./env')
 exports.gulp = require('./gulp')
