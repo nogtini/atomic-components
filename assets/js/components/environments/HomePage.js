@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ContactSection, FooterSection, HeaderSection } from '../ecosystems'
+import { ClientsSection, ContactSection, FooterSection, HeaderSection } from '../ecosystems'
 
 import { pages } from '../../strings'
 
@@ -50,6 +50,7 @@ export default class HomePage extends Component {
             </div>
           </div>
         </div>
+        <ClientsSection />
         <ContactSection {...this.props} />
         <FooterSection />
       </div>
