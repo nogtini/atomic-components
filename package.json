@@ -21,8 +21,6 @@
   "license": "MIT",
   "homepage": "https://github.com/langateam/langa.io",
   "devDependencies": {
-    "babel-plugin-transform-es3-member-expression-literals": "^6.22.0",
-    "babel-plugin-transform-es3-property-literals": "^6.22.0",
     "eslint": "^3",
     "eslint-config-trails": "^2",
     "eslint-plugin-react": "^6.9.0",
@@ -35,6 +33,8 @@
     "babel-loader": "^6.2.5",
     "babel-plugin-css-modules-transform": "^0.2.0",
     "babel-plugin-react-transform": "^1.1.1",
+    "babel-plugin-transform-es3-member-expression-literals": "^6.22.0",
+    "babel-plugin-transform-es3-property-literals": "^6.22.0",
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
