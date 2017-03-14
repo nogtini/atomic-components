@@ -1,6 +1,6 @@
 {
   "name": "langa.io",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Langa Website",
   "scripts": {
     "clean": "rimraf dist",
@@ -35,7 +35,7 @@
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7",
-    "webpack": "^1.12.9",
+    "webpack": "^1.14.0",
     "webpack-dev-middleware": "^1.2.0",
     "webpack-hot-middleware": "^2.0.0",
     "babel": "^6.5.2",
@@ -62,7 +62,6 @@
     "request-promise": "^4.1.1",
     "trailpack-gulp": "^1.0.2",
     "trailpack-hapi": "^2.2.0",
-    "webpack": "^1.14.0",
     "webpack-stream": "^3.2.0"
   },
   "eslintConfig": {
