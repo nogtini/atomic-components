@@ -22,8 +22,7 @@ module.exports = class ContactService extends Service {
       subject: message.subject,
       message: message.message,
       ip: meta.ip,
-      origin: meta.origin,
-      referrer: meta.referrer
+      origin: meta.origin
     }
 
     this.log.info('ContactService.email', form)
