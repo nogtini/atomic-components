@@ -14,11 +14,9 @@ export default class HomePage extends Component {
   render() {
     const strings = pages.home
 
-    console.log('homepage state', this.props.query)
-
     return (
       <div className="home-page">
-        <HeaderSection />
+        <HeaderSection {...this.props} />
         <div className="section">
           <div className="Container">
             <h1>
@@ -52,7 +50,7 @@ export default class HomePage extends Component {
             </div>
           </div>
         </div>
-        <ContactSection />
+        <ContactSection {...this.props} />
         <FooterSection />
       </div>
     )

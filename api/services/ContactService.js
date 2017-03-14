@@ -19,7 +19,7 @@ module.exports = class ContactService extends Service {
     const form = {
       method: 'POST',
       email: message.email,
-      subject: config.email.subject,
+      subject: message.subject,
       message: message.message,
       ip: meta.ip,
       origin: meta.origin,

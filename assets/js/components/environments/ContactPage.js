@@ -12,8 +12,8 @@ export default class ContactPage extends Component {
   render () {
     return (
       <div className="contact-page">
-        <HeaderSection />
-        <ContactSection />
+        <HeaderSection {...this.props} />
+        <ContactSection {...this.props} />
         <FooterSection />
       </div>
     )

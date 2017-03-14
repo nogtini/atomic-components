@@ -14,7 +14,15 @@
   background: -webkit-linear-gradient(-45deg, #dcebef 0%,#ecf0f1 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, #dcebef 0%,#ecf0f1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
-
+  .contact-header {
+    background: #F9CA4B;
+    background: -moz-linear-gradient(45deg, #f9c94d 0%, #edb855 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #f9c94d 0%,#edb855 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #f9c94d 0%,#edb855 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    color: black;
+    text-align: center;
+    padding: 1em;
+  }
 
   .navbar {
     text-align: right;

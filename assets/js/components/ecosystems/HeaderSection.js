@@ -1,9 +1,31 @@
 import React, { Component } from 'react'
 
 export default class Header extends Component {
+
+  static get propTypes () {
+    return {
+      query: React.PropTypes.object
+    }
+  }
+
+  renderContactHeader () {
+    const contacted = this.props.query.state === 'submitted'
+
+    if (!contacted) return
+
+    return (
+      <div className="contact-header">
+        <h3>
+          Thanks for contacting Langa! We'll get back to you shortly.
+        </h3>
+      </div>
+    )
+  }
+
   render() {
     return (
       <div className="header">
+        {this.renderContactHeader()}
 
         <div className="navbar">
           <a className="navlink" href="/">Home</a>

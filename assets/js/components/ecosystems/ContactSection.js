@@ -7,11 +7,12 @@ export default class ContactSection extends Component {
   static get propTypes () {
     return {
       page: React.PropTypes.bool,
+      query: React.PropTypes.object
     }
   }
 
   render () {
-    console.log('contact state', this.props)
+    const submitted = this.props.query.state === 'submitted'
 
     const strings = sections.contact
 
@@ -35,9 +36,9 @@ export default class ContactSection extends Component {
                 className="projectInfo"
                 required >
               </textarea>
-              <button type="submit" className="submit">
+              <button type="submit" className="submit" disabled={submitted}>
                 <i className="icon-mail" />
-                Send
+                {submitted ? 'Talk to you soon!' : 'Send'}
               </button>
             </form>
             <img src="//cdn.langa.io/art/diagrams/tower.svg" className="tower" />

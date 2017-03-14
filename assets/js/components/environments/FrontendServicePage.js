@@ -16,7 +16,7 @@ export default class FrontendServicePage extends Component {
 
     return (
       <div className="services-frontend-page">
-        <HeaderSection />
+        <HeaderSection {...this.props} />
         <div className="section">
           <div className="Container">
             <h1>
@@ -44,7 +44,7 @@ export default class FrontendServicePage extends Component {
             </div>
           </div>
         </div>
-        <ContactSection />
+        <ContactSection {...this.props} />
         <FooterSection />
       </div>
     )

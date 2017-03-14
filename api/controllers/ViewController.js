@@ -17,8 +17,6 @@ module.exports = class ViewController extends Controller {
     const { page } = request.params
     const component = ViewController.pageMapping[page] || 'HomePage'
 
-    this.log.info('page query', request.query)
-
     reply.view(`components/environments/${component}`, { query: request.query })
   }
 }

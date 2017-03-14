@@ -16,7 +16,7 @@ export default class OpenSourcePage extends Component {
 
     return (
       <div className="opensource-page">
-        <HeaderSection />
+        <HeaderSection {...this.props} />
         <div className="Container">
           <a
               className="ribbon github-fork-ribbon left-top"
@@ -86,7 +86,7 @@ export default class OpenSourcePage extends Component {
             </div>
           </div>
         </div>
-        <ContactSection />
+        <ContactSection {...this.props} />
         <FooterSection />
       </div>
     )
