@@ -19,6 +19,13 @@ module.exports = [
 
   {
     method: 'GET',
+    path: '/js/app.js',
+    handler: {
+      file: 'dist/app.js'
+    }
+  },
+  {
+    method: 'GET',
     path: '/style/global.css',
     handler: {
       file: 'dist/styles/global.css'

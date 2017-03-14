@@ -1,7 +1,4 @@
-const Service = require('trails/service')
-const nodemailer = require('nodemailer')
-const ReactDOMServer = require('react-dom/server')
-const React = require('react')
+const request = require('request-promise')
 
 /**
  * @module ContactService
@@ -16,45 +13,21 @@ module.exports = class ContactService extends Service {
    */
   email (message, meta) {
     const config = this.app.config.contact
-    const EmailTemplate = require('../../dist/components/ecosystems/EmailTemplate')
-    const emailTemplateFactory = React.createFactory(EmailTemplate)
-    const emailTemplateElement = React.createElement(emailTemplateFactory, Object.assign(message, meta), null)
+    const { portalId, formId } = config.hubspot
+    const formUrl = `https://forms.hubspot.com/uploads/form/v2/${portalId}/${formId}`
 
-    const options = {
-      from: `${config.email.from} <${config.smtp.user}>`,
-      to: config.email.to,
-      cc: message.email,
+    const form = {
+      method: 'POST',
+      email: message.email,
       subject: config.email.subject,
-      html: ReactDOMServer.renderToStaticMarkup(emailTemplateElement)
+      message: message.message,
+      ip: meta.ip,
+      origin: meta.origin,
+      referrer: meta.referrer
     }
 
-    this.app.log.info('message html', options.html)
-    // render message component
-    //
-    return new Promise((resolve, reject) => {
-      this.transport.sendMail(options, (err, info) => {
-        if (err) return reject(err)
+    this.log.info('ContactService.email', form)
 
-        this.app.log.info('nodemailer response', info)
-
-        return resolve(info)
-      })
-    })
+    return request.post(formUrl, { form })
   }
-
-  constructor (app) {
-    super(app)
-
-    const config = this.app.config.contact
-
-    this.transport = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: config.smtp.user,
-        pass: config.smtp.password
-      }
-    })
-  }
-
 }
-

@@ -35,7 +35,7 @@ module.exports = {
       relativeTo: path.resolve(__dirname, '..'),
       path: 'dist',
       compileOptions: {
-        renderMethod: 'renderToString',
+        renderMethod: 'renderToStaticMarkup',
         layoutPath: path.join(__dirname, '..', 'dist'),
         layout: 'html'
       }

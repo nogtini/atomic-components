@@ -4,8 +4,17 @@ import { ContactSection, FooterSection, HeaderSection } from '../ecosystems'
 import { pages } from '../../strings'
 
 export default class HomePage extends Component {
+
+  static get propTypes () {
+    return {
+      query: React.PropTypes.object
+    }
+  }
+
   render() {
     const strings = pages.home
+
+    console.log('homepage state', this.props.query)
 
     return (
       <div className="home-page">
@@ -21,7 +30,9 @@ export default class HomePage extends Component {
             <div className="backfrontdesign services">
               <div className="backend" >
                 <img src="//cdn.langa.io/art/diagrams/backend.svg" />
-                <h2><a href="/services/node-js-development">Back-End</a></h2>
+                <a href="/services/node-js-development">
+                  <h2>Back-End</h2>
+                </a>
                 <div>{strings.services.nodejs}</div>
               </div>
               <div className="frontend">

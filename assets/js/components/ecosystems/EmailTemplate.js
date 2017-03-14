@@ -16,8 +16,10 @@ module.exports = class EmailTemplate extends Component {
   render () {
     return (
       <div>
-        hello!
-        <br />{this.props.subject}
+        <h3>Subject</h3>
+        {this.props.subject}
+        <h3>Message</h3>
+        message.text
       </div>
     )
   }

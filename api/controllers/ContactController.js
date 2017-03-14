@@ -1,7 +1,3 @@
-'use strict'
-
-const Controller = require('trails/controller')
-
 /**
  * @module ContactController
  * @description Handle contact form requests.
@@ -9,15 +5,14 @@ const Controller = require('trails/controller')
 module.exports = class ContactController extends Controller {
 
   email (request, reply) {
+    const referrer = request.info.referrer
     const meta = {
       origin: request.info.hostname,
       ip: request.headers['x-forwarded-for'] || request.info.remoteAddress,
-      referrer: request.info.referrer
+      referrer
     }
 
     this.app.services.ContactService.email(request.payload, meta)
-      .then(resp => reply(resp))
+      .then(resp => reply.redirect(`${referrer}?state=submitted`))
   }
-
 }
-

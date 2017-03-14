@@ -26,7 +26,7 @@ export default class Footer extends Component {
         </div>
 
         <div className="icons">
-          <a title="Langa on Facebook" href="//www.facebook.com/langainc" target="_blank"><i className="icon-facebook"/></a>
+          <a title="Langa on Facebook" className="social facebook icon-facebook" href="https://www.facebook.com/langainc" target="_blank"></a>
           <a title="Langa on Twitter" className="social twitter icon-twitter" href="//twitter.com/langateam" target="_blank"></a>
           <a title="Langa on Github" className="social github icon-github" href="//github.com/langateam" target="_blank"></a>
           <a title="Langa on Linkedin" className="social linkedin icon-linkedin" href="//www.linkedin.com/company/langa-inc-" target="_blank"></a>

@@ -8,7 +8,7 @@
     "build": "npm run clean && npm run build:webpack",
     "start": "node server.js",
     "lint": "eslint src",
-    "test": "eslint . && mocha"
+    "test": "eslint api assets config test && mocha"
   },
   "repository": {
     "type": "git",
@@ -42,18 +42,23 @@
     "url-loader": "^0.5.7"
   },
   "dependencies": {
+    "babel-plugin-transform-es3-member-expression-literals": "^6.22.0",
+    "babel-plugin-transform-es3-property-literals": "^6.22.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-0": "^6.22.0",
     "extract-text-webpack-plugin": "^2.1.0",
     "github-fork-ribbon-css": "^0.2.1",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-imagemin": "^3.1.1",
     "gulp-sass": "^3.1.0",
-    "hubspot": "^0.4.3",
-    "mailgun-js": "^0.8.2",
-    "nodemailer": "^3.1.5",
+    "hapi-react-views": "^9.2.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-popover": "^0.4.4",
+    "react-router": "^4.0.0",
+    "react-router-dom": "^4.0.0",
+    "request-promise": "^4.1.1",
     "trailpack-gulp": "^1.0.2",
     "trailpack-hapi": "^2.2.0",
     "webpack": "^1.14.0",
@@ -69,10 +74,5 @@
         "jsx": true
       }
     }
-  },
-  "babel": {
-    "presets": [
-      "react"
-    ]
   }
 }

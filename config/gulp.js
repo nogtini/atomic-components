@@ -1,15 +1,9 @@
 const gulp = require('gulp')
 const babel = require('gulp-babel')
-const webpack = require('webpack-stream')
+const webpackStream = require('webpack-stream')
+const webpack = require('webpack')
 const sass = require('gulp-sass')
 const imagemin = require('gulp-imagemin')
-//const ExtractTextPlugin = require('extract-text-webpack-plugin')
-
-/*jjconst extractSass = new ExtractTextPlugin({
-  filename: '[name].[contenthash].css'
-  //disable: process.env.NODE_ENV === 'development'
-})
-*/
 
 module.exports = {
 
@@ -21,7 +15,7 @@ module.exports = {
     compileTemplate () {
       return gulp.src('./assets/js/**/*.js')
         .pipe(babel({
-          presets: ['react', 'es2015', 'stage-0']
+          presets: ['react', 'es2015']
         }))
         .pipe(gulp.dest('dist'))
     },
@@ -36,6 +30,39 @@ module.exports = {
       return gulp.src('./assets/img/*')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/img'))
+    },
+    jsBundle () {
+      return gulp.src('./assets/js/**/*.js')
+        .pipe(webpackStream({
+          output: {
+            filename: 'app.js'
+          },
+          module: {
+            loaders: [
+              {
+                test: /\.js$/,
+                loader: 'babel-loader',
+                query: {
+                  presets: [
+                    require.resolve('babel-preset-react'),
+                    require.resolve('babel-preset-es2015')
+                  ]
+                }
+              }
+            ]
+          },
+          plugins: [
+            /*
+            new webpack.optimize.UglifyJsPlugin({ minimize: true }),
+            new webpack.DefinePlugin({
+              'process.env': {
+                'NODE_ENV': JSON.stringify('production')
+              }
+            })
+            */
+          ]
+        }, webpack))
+        .pipe(gulp.dest('dist'))
     }
   }
 }

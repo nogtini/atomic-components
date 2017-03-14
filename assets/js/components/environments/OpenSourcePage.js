@@ -4,6 +4,13 @@ import { ContactSection, FooterSection, HeaderSection } from '../ecosystems'
 import { pages } from '../../strings'
 
 export default class OpenSourcePage extends Component {
+
+  static get propTypes () {
+    return {
+      query: React.PropTypes.object
+    }
+  }
+
   render() {
     const strings = pages.openSource
 

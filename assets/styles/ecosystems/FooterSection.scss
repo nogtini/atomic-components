@@ -1,7 +1,9 @@
 .Footer {
   border-top: 4px solid #33495F;
   height: 240px;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: #F9CA4B;
   background: -moz-linear-gradient(45deg, #f9c94d 0%, #edb855 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(45deg, #f9c94d 0%,#edb855 100%); /* Chrome10-25,Safari5.1-6 */

@@ -8,5 +8,9 @@ module.exports = {
     to: 'hello@langa.io',
     subject: 'Hello from Langa!'
   },
-  hubspotKey: process.env.HUBSPOT_API_KEY
+  hubspot: {
+    hubspotKey: process.env.HUBSPOT_API_KEY,
+    portalId: process.env.HUBSPOT_PORTAL_ID,
+    formId: process.env.HUBSPOT_FORM_ID
+  }
 }
