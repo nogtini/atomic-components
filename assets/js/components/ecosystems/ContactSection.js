@@ -18,9 +18,9 @@ export default class ContactSection extends Component {
 
     return (
       <div className="Contact">
-        <div className="section flexMiddle">
+        <div className="section">
           <h1>{strings.title}</h1>
-          <h2>
+          <h2 className="blurb">
             {strings.blurb}
           </h2>
           <div className="contactTower">

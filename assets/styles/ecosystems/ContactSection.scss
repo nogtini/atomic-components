@@ -32,6 +32,14 @@
   background: #ECF0F1;
 
   .section {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .blurb {
+      width: 100%;
+    }
+
     .teamimage {
       width: 100%;
       display: block;
@@ -116,12 +124,11 @@
         @media (min-width: 768px) {
           margin: 0 16px;
         }
+        @media (max-width: 767px) {
+          display: none;
+        }
       }
 
-    }
-
-    .teamimage {
-      width: 100%;
     }
   }
 }
