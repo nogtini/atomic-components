@@ -1,2 +1,3 @@
-# atomic-components
-Applying patternlab.io design systems to React components
+# langa.io
+
+The Langa Website

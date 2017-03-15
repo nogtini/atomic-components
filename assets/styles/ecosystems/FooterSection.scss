@@ -1,0 +1,113 @@
+.Footer {
+  border-top: 4px solid #33495F;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #F9CA4B;
+  background: -moz-linear-gradient(45deg, #f9c94d 0%, #edb855 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #f9c94d 0%,#edb855 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #f9c94d 0%,#edb855 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  .summary {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    margin-bottom: 3em;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .siteMap {
+      color: black;
+      display: flex;
+      flex-direction: row;
+      width: 480px;
+
+      ul {
+        margin-left: 3em;
+      }
+    }
+    .contact-info {
+      width: 270px;
+      h2 {
+        font-size: 18px;
+      }
+      h1, h2 {
+        margin-top: 0;
+        margin-bottom: 8px;
+        text-align: left;
+      }
+      i {
+        margin-right: 1em;
+        opacity: 0.5;
+        width: 1em;
+        text-align: center;
+      }
+    }
+  }
+
+  .icons {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 480px;
+    padding-top: 1em;
+
+    .social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-decoration: none;
+      font-size: 16pt;
+      background: none;
+      border: 1px solid #33495F;
+      border-radius: 60px;
+      color: #33495F;
+
+      height: 40px;
+      line-height: 30px;
+      margin: auto 3px;
+      width: 40px;
+      text-align: center;
+
+      &.twitter {
+        &:hover {
+          color: #1dcaff;
+        }
+      }
+      &.facebook {
+        &:hover {
+          color: #3b5998;
+        }
+      }
+      &.github {
+        &:hover {
+          color: black;
+        }
+      }
+      &.linkedin {
+        &:hover {
+          color: #0077B5;
+        }
+      }
+      &.medium {
+        &:hover {
+          color: #14c767;
+        }
+      }
+      &.maps {
+        &:hover {
+          color: #e81e25;
+        }
+      }
+    }
+    .logooutline {
+      height: 40px;
+    }
+  }
+}

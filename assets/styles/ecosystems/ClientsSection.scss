@@ -1,0 +1,28 @@
+.client-section {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+
+  .client-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+
+    img {
+      width: 180px;
+      padding: 20px;
+      filter: grayscale(75%);
+      opacity: 0.90;
+      transition: all 0.25s ease;
+    }
+
+    img:hover {
+      filter: grayscale(20%);
+      opacity: 1.00;
+    }
+  }
+
+}

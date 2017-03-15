@@ -1,5 +1,5 @@
-.DS_Store
+*.log
+dist/
+*.sw*
 node_modules
-dist
-npm-debug.log
-.idea
+coverage
