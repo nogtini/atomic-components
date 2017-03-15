@@ -59,7 +59,7 @@ export default class OpenSourcePage extends Component {
                   <img src="//cdn.langa.io/art/logos/langaoss.png" />
                   <h2>Langa Projects</h2>
                 </a>
-                <div className={strings.featured.misc}></div>
+                <div>{strings.featured.langa}</div>
               </div>
             </div>
             <h1>

@@ -26,7 +26,7 @@ module.exports = {
       featured: {
         trails: 'Langa created Trails.js, a Modern Web Application Framework for Node.js, and a suite of plugins.',
         sails: 'Since 2014, we\'ve maintained numerous plugins and adapters for Sails.js, Waterline, and Skipper.',
-        misc: 'We\'ve published hundreds of open-source Node.js modules, and are happy to work with users and contributors.'
+        langa: 'We\'ve published hundreds of open-source Node.js modules, and are happy to work with users and contributors.'
       },
       events: {
         blurb: 'We support Node and Javascript events all over the world. See you there!',
