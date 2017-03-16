@@ -15,13 +15,13 @@
 
     img {
       width: 40%;
-      margin-left: .5em;
-      margin-right: .5em;
+      margin-left: .75em;
+      margin-right: .75em;
       filter: grayscale(75%);
       opacity: 0.90;
       transition: all 0.25s ease;
       @media (min-width: 750px) {
-        width: 30%;
+        width: 27%;
       }
     }
 
