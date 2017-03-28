@@ -18,7 +18,6 @@ export default class ContactSection extends Component {
 
     return (
       <div className="Contact">
-        <div className="section">
           <h1>{strings.title}</h1>
           <h2 className="blurb">
             {strings.blurb}
@@ -44,7 +43,6 @@ export default class ContactSection extends Component {
             <img src="//cdn.langa.io/art/diagrams/tower.svg" className="tower" />
           </div>
           <img src="//cdn.langa.io/art/backgrounds/teamblue-small-png8.png" className="teamimage" />
-        </div>
       </div>
     )
   }
