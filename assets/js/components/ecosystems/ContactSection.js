@@ -22,27 +22,32 @@ export default class ContactSection extends Component {
           <h2 className="blurb">
             {strings.blurb}
           </h2>
-          <div className="contactTower">
-            <form className="form" action="/contact" method="POST">
-              <input placeholder="What's your Email Address?" name="email" type="email" required></input>
-              <input placeholder="Message Subject" name="subject"></input>
-              <textarea
-                name="message"
-                placeholder="How can we help?"
-                type="text"
-                minLength="8"
-                maxLength="4096"
-                className="projectInfo"
-                required >
-              </textarea>
-              <button type="submit" className="submit" disabled={submitted}>
-                <i className="icon-mail" />
-                {submitted ? 'Talk to you soon!' : 'Send'}
-              </button>
-            </form>
-            <img src="//cdn.langa.io/art/diagrams/tower.svg" className="tower" />
+          <div className="section">
+            <div className="contactTower">
+              <form className="form" action="/contact" method="POST">
+                <input placeholder="What's your Email Address?" name="email" type="email" required></input>
+                <input placeholder="Message Subject" name="subject"></input>
+                <textarea
+                  name="message"
+                  placeholder="How can we help?"
+                  type="text"
+                  minLength="8"
+                  maxLength="4096"
+                  className="projectInfo"
+                  required >
+                </textarea>
+                <button type="submit" className="submit" disabled={submitted}>
+                  <i className="icon-mail" />
+                  {submitted ? 'Talk to you soon!' : 'Send'}
+                </button>
+              </form>
+              <img src="//cdn.langa.io/art/diagrams/tower.svg" className="tower" />
+            </div>
           </div>
-          <img src="//cdn.langa.io/art/backgrounds/teamblue-small-png8.png" className="teamimage" />
+
+          <img
+            id="teamImage"
+          src="//cdn.langa.io/art/backgrounds/teamblue-small-png8.png" className="teamimage" />
       </div>
     )
   }
