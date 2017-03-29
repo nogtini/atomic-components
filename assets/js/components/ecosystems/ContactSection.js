@@ -47,7 +47,7 @@ export default class ContactSection extends Component {
 
           <img
             id="teamImage"
-          src="//cdn.langa.io/art/backgrounds/teamblue-small-png8.png" className="teamimage" />
+            src="//cdn.langa.io/art/backgrounds/teamblue-small-png8.png" className="teamimage" />
       </div>
     )
   }
