@@ -1,0 +1,10 @@
+--reporter spec
+--recursive
+--full-trace
+--no-exit
+--globals app
+--timeout 10000
+
+test/setup.js
+test/unit/
+test/integration/

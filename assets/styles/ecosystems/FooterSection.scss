@@ -1,0 +1,130 @@
+.Footer {
+  .top {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 1em;
+  }
+  border-top: 4px solid #33495F;
+  height: 240px;
+  justify-content: center;
+  background: #F9CA4B;
+  background: -moz-linear-gradient(45deg, #f9c94d 0%, #edb855 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #f9c94d 0%,#edb855 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #f9c94d 0%,#edb855 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+
+  .siteMap {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1em;
+    flex-wrap: wrap;
+    ul {
+      height: 100%;
+      margin-right: 25px;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1em;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    h2 {
+      font-size: 18px;
+    }
+    h1, h2 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      text-align: left;
+    }
+    i {
+      margin-right: 1em;
+      opacity: 0.5;
+      width: 1em;
+      text-align: center;
+    }
+  }
+
+  .icons {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 1em;
+
+    .icons-row {
+      display: flex;
+      flex-direction: row;
+
+      .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-decoration: none;
+        font-size: 16pt;
+        background: none;
+        border: 1px solid #33495F;
+        border-radius: 60px;
+        color: #33495F;
+
+        height: 40px;
+        line-height: 30px;
+        margin: auto 8px;
+        width: 40px;
+        text-align: center;
+
+        &.twitter {
+          &:hover {
+            color: #1dcaff;
+          }
+        }
+        &.facebook {
+          &:hover {
+            color: #3b5998;
+          }
+        }
+        &.github {
+          &:hover {
+            color: black;
+          }
+        }
+        &.linkedin {
+          &:hover {
+            color: #0077B5;
+          }
+        }
+        &.medium {
+          &:hover {
+            color: #14c767;
+          }
+        }
+        &.maps {
+          &:hover {
+            color: #e81e25;
+          }
+        }
+      }
+    }
+
+    .logooutline {
+      height: 40px;
+    }
+  }
+}

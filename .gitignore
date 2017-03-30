@@ -1,5 +1,7 @@
-.DS_Store
+.tmp
+*.log
+dist/
+*.sw*
 node_modules
-dist
-npm-debug.log
-.idea
+coverage
+.idea/*

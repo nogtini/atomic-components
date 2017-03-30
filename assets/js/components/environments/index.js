@@ -1,0 +1,6 @@
+export { default as HomePage } from './HomePage'
+export { default as FrontendServicePage } from './FrontendServicePage'
+export { default as NodeServicePage } from './NodeServicePage'
+export { default as DesignServicePage } from './DesignServicePage'
+export { default as OpenSourcePage } from './OpenSourcePage'
+export { default as ContactPage } from './ContactPage'

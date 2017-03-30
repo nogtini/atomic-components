@@ -1,0 +1,34 @@
+.client-section {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+
+  @media (min-width: 750px) {
+    max-width: 750px;
+  }
+
+  .client-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+
+    img {
+      width: 40%;
+      margin-left: .75em;
+      margin-right: .75em;
+      filter: grayscale(75%);
+      opacity: 0.90;
+      transition: all 0.25s ease;
+      @media (min-width: 750px) {
+        width: 25%;
+      }
+    }
+
+    img:hover {
+      filter: grayscale(20%);
+      opacity: 1.00;
+    }
+  }
+
+}

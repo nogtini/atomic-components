@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - stable
+
+before_deploy:
+  - npm run build
+
+deploy:
+  provider: s3
+  access_key_id: AKIAJ7LWQJ573YOA2B2Q
+  secret_access_key:
+    secure: X20AzI8bqjjNiePL4kF5VCFC58+wC+q5UcGjtWkNEFZb+syYvDIhm8T2JDkhQCjikj8D3CM5HPzQvuQ+9iysHGlqz9vpIPJJSga5eEaNooj4ld1y8de2quusJx3tDnlNb0a0Fdu2Adb9uu0etV6p71H1evBZD5xbDNmTIm0Rk6EWTe5ckO6yG3C2wWsWUAPwg5mckacWpX6B826RcZMCdnRmmnCBJzxq0x60QZICCb9aprGAQcq5mWiZ5TUH1WisAcaXYspAMphiS68syyiS1iUHb8EGUButOuWJ0ZJa9+MFm7vQ30QrjGP06LqcSrbe+Koi8xb72p/hdGF2nxMpewFogrEhfdu+vdUDM7z5fWGmAqmCEiFWOb5XXmwgsdZ68cAzJmKVou64tv9lqIth60ov5MvJZehTdb+imrxN/V59qCHK3BG7NoCmG2lcC7GzuZTCYstefhpu4zR5wD/kQHbWpjpe1VHEFOIslYDc2vG/NMTVKghIYsysW45oMqgLTKh7RW89gkZZkE3Iz1hVu2eQ/a4kSXWlenRlG5LVslx76IvrD3O6HdQh63AAy6y0fcx2ZQzy3S3OpMVLXpfwMkiIGYuoRqujVkTjR8mQUyHGUHFGkeapjCQCHtPSrR7TVyv9iwf2BFD453W7ObPbSWs39FY0D6biL+epTXSE5wI=
+  bucket: langa.io
+  local-dir: dist
+  acl: public_read
+  on:
+    repo: langateam/langa.io
+    tags: true
