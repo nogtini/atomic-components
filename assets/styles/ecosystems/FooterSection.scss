@@ -1,9 +1,16 @@
 .Footer {
+  .top {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 1em;
+  }
   border-top: 4px solid #33495F;
   height: 240px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   background: #F9CA4B;
   background: -moz-linear-gradient(45deg, #f9c94d 0%, #edb855 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(45deg, #f9c94d 0%,#edb855 100%); /* Chrome10-25,Safari5.1-6 */
@@ -14,11 +21,12 @@
     color: black;
     display: flex;
     flex-direction: row;
-    width: 75%;
     justify-content: space-around;
     padding-top: 1em;
+    flex-wrap: wrap;
     ul {
       height: 100%;
+      margin-right: 25px;
     }
     a {
       text-decoration: none;
@@ -27,7 +35,7 @@
   }
   .contact-info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 1em;
