@@ -4,3 +4,4 @@ dist/
 *.sw*
 node_modules
 coverage
+.idea/*
